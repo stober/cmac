@@ -1,0 +1,3320 @@
+%!PS-Adobe-3.0
+%%Title: Microsoft Word - UNH_CMAC.DOC
+%%Creator: Windows NT 4.0
+%%CreationDate: 12:55 7/29/1996
+%%Pages: (atend)
+%%BoundingBox: 12 15 599 782
+%%LanguageLevel: 2
+%%DocumentNeededFonts: (atend)
+%%DocumentSuppliedFonts: (atend)
+%%EndComments
+%%BeginProlog
+
+%%BeginResource: procset NTPSOct95
+/NTPSOct95 100 dict dup begin/bd{bind def}bind def/ld{load def}bd/ed{exch def}
+bd/a/currentpoint ld/c/curveto ld/d/dup ld/e/eofill ld/f/fill ld/tr/translate
+ld/gr/grestore ld/gs/gsave ld/j/setlinejoin ld/L/lineto ld/M/moveto ld/n
+/newpath ld/cp/closepath ld/rm/rmoveto ld/sl/setlinewidth ld/sd/setdash ld/g
+/setgray ld/r/setrgbcolor ld/s/stroke ld/t/show ld/aw/awidthshow ld/im
+/imagemask ld/MS{moveto show}bd/SF{findfont exch scalefont setfont}bd/SM{cmtx
+setmatrix}bd/MF{findfont exch makefont setfont}bd/CM{/cmtx matrix currentmatrix
+def}bd/B{M exch dup 0 rlt exch 0 exch rlt neg 0 rlt}bd/CB{B cp eoclip}bd/EA{1
+index 0/G0 put 4 string 1 1 4 -1 roll{3 copy neg exch cvs dup 0 71 put cvn 3 -1
+roll exch put}for pop}bd/rlt/rlineto ld/L2?/languagelevel where{pop
+languagelevel 2 ge}{false}ifelse def end def 
+%%EndResource
+%%EndProlog
+%%BeginSetup
+[{0
+/languagelevel where{pop languagelevel 2 ge}{false}ifelse
+{1 dict dup/JobTimeout 4 -1 roll put setuserparams}
+{statusdict/setjobtimeout get exec}ifelse
+}stopped cleartomark
+[{300
+/languagelevel where{pop languagelevel 2 ge}{false}ifelse
+{1 dict dup/WaitTimeout 4 -1 roll put setuserparams}
+{statusdict/waittimeout 3 -1 roll put}ifelse
+}stopped cleartomark
+[{
+%%BeginFeature: *PageSize Letter
+
+    2 dict dup /PageSize [612 792] put dup /ImagingBBox null put setpagedevice
+%%EndFeature
+} stopped cleartomark
+/#copies 1 def
+%%EndSetup
+NTPSOct95 begin
+%%Page: 1 1
+NTPSOct95 /PageSV save put
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+%%IncludeFont: Helvetica
+[92 0 0 -92 0 0]/Helvetica MF
+(1)2495 6197 MS
+%%IncludeFont: Helvetica-Bold
+[100 0 0 -100 0 0]/Helvetica-Bold MF
+(UNH_CMAC Version 2.1)1880 613 MS
+(The University of New Hampshire Implementation of the)1117 731 MS
+(Cerebellar Model Arithmetic Computer - CMAC)1339 849 MS
+(August 31, 1994)2065 1085 MS
+(\(last modified July, 1996\))1851 1203 MS
+(W. Thomas Miller  and )1540 1439 MS
+(Filson H. )2627 1439 MS
+(Glanz)3078 1439 MS
+(Robotics Laboratory)1958 1557 MS
+(University of New Hampshire)1754 1675 MS
+(Durham, New Hampshire 03824)1698 1793 MS
+[92 0 0 -92 0 0]/Helvetica-Bold MF
+(THE ALBUS CMAC)496 2054 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(In this section we review the basic operating principles of the CMAC neural network as)646 2211 MS
+(proposed by )496 2317 MS
+(Albus  [2,4-7]. We then present a mathematical description of the conventional)1027 2317 MS
+(CMAC in a form intended to facilitate software implementation. The notation used is somewhat)496 2423 MS
+(different than in the original )496 2529 MS
+(Albus papers, but the set of equations presented is numerically)1635 2529 MS
+(equivalent to the original )496 2635 MS
+(Albus algorithm.)1519 2635 MS
+[92 0 0 -92 0 0]/Helvetica-Bold MF
+(General Operation of the )496 2844 MS
+(Albus CMAC)1603 2844 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(The operation of the )646 3001 MS
+(Albus CMAC [2,4-7,11] can most easily be described in terms of a)1498 3001 MS
+(large set of overlapping, )496 3107 MS
+(multi-dimensional receptive fields with finite boundaries. Any input)1506 3107 MS
+(vector falls within the range of some of the local receptive fields \(the excited receptive fields\),)496 3213 MS
+(and falls outside of the range of most of the receptive fields. The response of the CMAC neural)496 3319 MS
+(network to a given input is the average of the responses of the receptive fields excited by that)496 3425 MS
+(input, and is not affected by the other receptive fields. Similarly, neural network training for a)496 3531 MS
+(given input vector affects the adjustable parameters of the excited receptive fields, but does not)496 3637 MS
+(affect the parameters of the remaining majority of receptive fields.)496 3743 MS
+(The organization of the receptive fields of a typical )646 3899 MS
+(Albus CMAC neural network with a two-)2720 3899 MS
+(dimensional input space is as follows. The total collection of receptive fields is divided into C)496 4005 MS
+/IsChar{exch/CharStrings get exch known}bd/MapCh{3 -1 roll/Encoding get 3 1
+roll put}bd/MapDegree{dup 16#b0 exch/degree IsChar{/degree}{/ring}ifelse MapCh}
+bd/MapBB{dup 16#a6 exch/brokenbar IsChar{/brokenbar}{/bar}ifelse MapCh}bd
+/reencode{findfont begin currentdict dup length dict begin{1 index/FID ne{def}
+{pop pop}ifelse}forall/FontName exch def dup length 0 ne{/Encoding Encoding 256
+array copy def 0 exch{dup type/nametype eq{Encoding 2 index 2 index put pop 1
+add}{exch pop}ifelse}forall}if pop currentdict dup end end/FontName get exch
+definefont dup MapDegree MapBB}bd/LATENC[0/grave/acute/circumflex/tilde/macron
+/breve/dotaccent/dieresis/ring/cedilla/hungarumlaut/ogonek/caron/dotlessi/fi/fl
+/Lslash/lslash/Zcaron/zcaron/minus/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/space/exclam/quotedbl
+/numbersign/dollar/percent/ampersand/quotesingle/parenleft/parenright/asterisk
+/plus/comma/hyphen/period/slash/zero/one/two/three/four/five/six/seven/eight
+/nine/colon/semicolon/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M
+/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright/asciicircum
+/underscore/grave/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft
+/bar/braceright/asciitilde/.notdef/.notdef/.notdef/quotesinglbase/florin
+/quotedblbase/ellipsis/dagger/daggerdbl/circumflex/perthousand/Scaron
+/guilsinglleft/OE/.notdef/.notdef/.notdef/.notdef/quoteleft/quoteright
+/quotedblleft/quotedblright/bullet/endash/emdash/tilde/trademark/scaron
+/guilsinglright/oe/.notdef/.notdef/Ydieresis/.notdef/exclamdown/cent/sterling
+/currency/yen/brokenbar/section/dieresis/copyright/ordfeminine/guillemotleft
+/logicalnot/hyphen/registered/macron/degree/plusminus/twosuperior/threesuperior
+/acute/mu/paragraph/periodcentered/cedilla/onesuperior/ordmasculine
+/guillemotright/onequarter/onehalf/threequarters/questiondown/Agrave/Aacute
+/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla/Egrave/Eacute/Ecircumflex
+/Edieresis/Igrave/Iacute/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute
+/Ocircumflex/Otilde/Odieresis/multiply/Oslash/Ugrave/Uacute/Ucircumflex
+/Udieresis/Yacute/Thorn/germandbls/agrave/aacute/acircumflex/atilde/adieresis
+/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave/iacute
+/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex/otilde/odieresis
+/divide/oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn/ydieresis]def
+LATENC /_Helvetica /Helvetica reencode
+[92 0 0 -92 0 0]/_Helvetica MF
+(subsets, referred to in this document as \223layers\224 \(the layers represent parallel N-dimensional)496 4111 MS
+(hyperspaces for a network with N inputs\). The receptive fields in each of the layers have)496 4217 MS
+(rectangular boundaries and are organized so as to span the input space without overlap. Any)496 4323 MS
+(input vector excites one receptive field from each layer, for a total of C exited receptive fields for)496 4429 MS
+(any input. Each of the layers of receptive fields is identical in organization, but each layer is)496 4535 MS
+(offset relative to the others in the input )496 4641 MS
+(hyperspace. The width of the receptive fields produces)2086 4641 MS
+(input generalization, while the offset of the adjacent layers of receptive fields produces input)496 4747 MS
+(quantization. The ratio of the width of each receptive field \(input generalization\) to the offset)496 4853 MS
+(between adjacent layers of receptive fields \(input )496 4959 MS
+(quantization\) must be equal to C for all)2511 4959 MS
+(dimensions of the input space. The integer parameter C is referred to as the )496 5065 MS
+(generalization)3619 5065 MS
+n
+570 6 3619 5075 B
+f
+(parameter)496 5171 MS
+(.)916 5171 MS
+n
+419 6 496 5181 B
+f
+(This organization of the receptive fields guarantees that only a fixed number, C, of receptive)646 5327 MS
+(fields is excited by any input. However, the total number of receptive fields required to span the)496 5433 MS
+(input space can still be large for many practical problems. On the other hand, it is unlikely that)496 5539 MS
+(the entire input state space of a large system would be visited in solving a specific problem.)496 5645 MS
+(Thus it is not necessary to store unique information for each receptive field. Following this logic,)496 5751 MS
+(most implementations of the )496 5857 MS
+(Albus CMAC include some form of pseudo-random hashing, so)1675 5857 MS
+showpage
+%%Page: 2 2
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(2)2495 6197 MS
+(that only information about receptive fields that have been excited during previous training is)496 603 MS
+(actually stored.)496 709 MS
+(Each receptive field in the )646 865 MS
+(Albus CMAC is assumed to be an on-off type of entity. If a)1725 865 MS
+(receptive field is excited, its response is equal to the magnitude of a single adjustable weight)496 971 MS
+(specific to that receptive field. If a receptive field is not excited, its response is zero. The CMAC)496 1077 MS
+(output is thus the average of the adjustable weights of the excited receptive fields. If nearby)496 1183 MS
+(points in the input space excite the same receptive fields, they produce the same output value.)496 1289 MS
+(The output only changes when the input crosses one of the receptive field boundaries. The)496 1395 MS
+(Albus CMAC neural network thus produces piece-wise constant outputs.)496 1501 MS
+(The implementation of the )646 1657 MS
+(Albus CMAC logically proceeds as follows:)1738 1657 MS
+(1. Identify the C receptive fields excited by the input.)646 1813 MS
+(2. Find the C adjustable weights for those receptive fields in a pool of stored weights.)646 1969 MS
+(3. Compute the average of the C adjustable weights.)646 2125 MS
+[92 0 0 -92 0 0]/Helvetica-Bold MF
+(The )496 2334 MS
+(Albus CMAC Computation)684 2334 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(Consider a classic )646 2491 MS
+(Albus CMAC neural network with a real valued input vector)1417 2491 MS
+1 j
+1 setlinecap
+16 sl
+n
+1695 2677 M
+1747 2677 L
+CM 0.258 0.258 scale
+s
+SM
+[91.438 0 0 -91.438 0 0]/Helvetica MF
+(S)1693 2661 MS
+(s)1999 2661 MS
+(s)2148 2661 MS
+(s)2456 2661 MS
+[66.5 0 0 -66.5 0 0]/Helvetica MF
+(N)2505 2686 MS
+%%IncludeFont: Symbol
+[91.438 0 0 -91.438 0 0]/Symbol MF
+(=)1833 2661 MS
+(<)1916 2661 MS
+(>)2588 2661 MS
+[66.5 0 0 -66.5 0 0]/Helvetica MF
+(1)2049 2686 MS
+(2)2201 2686 MS
+[91.438 0 0 -91.438 0 0]/Helvetica MF
+(,)2096 2661 MS
+(,)2257 2661 MS
+(.)2304 2661 MS
+(.)2331 2661 MS
+(.)2358 2661 MS
+(,)2404 2661 MS
+( )2674 2661 MS ( )2700 2661 MS ( )2725 2661 MS ( )2751 2661 MS ( )2776 2661 MS ( )2802 2661 MS ( )2827 2661 MS ( )2853 2661 MS ( )2878 2661 MS ( )2904 2661 MS
+( )2929 2661 MS ( )2955 2661 MS ( )2981 2661 MS ( )3006 2661 MS ( )3032 2661 MS ( )3057 2661 MS (\()3083 2661 MS (1)3113 2661 MS (\))3164 2661 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(in an N-dimensional input space. Assume that the generalization parameter \(the number of)496 2830 MS
+(simultaneously excited receptive fields for each input\) is C. The first step of the CMAC)496 2936 MS
+(computation is to form a normalized integer input vector )496 3042 MS
+(S)2790 3042 MS
+(' by dividing each component )2851 3042 MS
+(s)4059 3042 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)4105 3055 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( of the)4118 3042 MS
+n
+60 6 2790 3052 B
+f
+(input vector by an appropriate )496 3155 MS
+(quantization parameter)1738 3155 MS
+( )2679 3155 MS
+[92 0 0 -92 0 0]/Symbol MF
+(D)2705 3155 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)2761 3168 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(:)2774 3155 MS
+n
+940 6 1738 3165 B
+f
+n
+979 3407 M
+1031 3407 L
+CM 0.258 0.258 scale
+s
+SM
+n
+2238 3359 M
+2355 3359 L
+CM 0.258 0.258 scale
+s
+SM
+n
+2597 3359 M
+2728 3359 L
+CM 0.258 0.258 scale
+s
+SM
+n
+3116 3359 M
+3251 3359 L
+CM 0.258 0.258 scale
+s
+SM
+[91.438 0 0 -91.438 0 0]/Helvetica MF
+(S)977 3390 MS
+(s)1269 3390 MS
+(s)1417 3390 MS
+(s)1725 3390 MS
+(s)2252 3318 MS
+(s)2611 3318 MS
+(s)3130 3318 MS
+[66.5 0 0 -66.5 0 0]/Helvetica MF
+(N)1775 3415 MS
+(N)3180 3343 MS
+(N)3188 3486 MS
+[91.438 0 0 -91.438 0 0]/Symbol MF
+(\242)1038 3350 MS
+(=)1102 3390 MS
+(<)1185 3390 MS
+(\242)1318 3391 MS
+(\242)1467 3391 MS
+(\242)1775 3391 MS
+(>)1857 3390 MS
+(=)1941 3390 MS
+(<)2024 3390 MS
+(>)3310 3390 MS
+[66.5 0 0 -66.5 0 0]/Helvetica MF
+(1)1318 3415 MS
+(2)1471 3415 MS
+(1)2301 3343 MS
+(1)2310 3486 MS
+(2)2665 3343 MS
+(2)2673 3486 MS
+[91.438 0 0 -91.438 0 0]/Helvetica MF
+(,)1366 3390 MS
+(,)1527 3390 MS
+(.)1573 3390 MS
+(.)1600 3390 MS
+(.)1628 3390 MS
+(,)1674 3390 MS
+(i)2104 3390 MS (n)2124 3390 MS (t)2176 3390 MS (\()2201 3390 MS
+(\))2360 3390 MS
+(,)2415 3390 MS
+(i)2464 3390 MS (n)2484 3390 MS (t)2535 3390 MS (\()2561 3390 MS
+(\))2732 3390 MS
+(,)2787 3390 MS
+(.)2833 3390 MS
+(.)2861 3390 MS
+(.)2888 3390 MS
+(,)2934 3390 MS
+(i)2983 3390 MS (n)3003 3390 MS (t)3054 3390 MS (\()3080 3390 MS
+(\))3256 3390 MS
+[91.438 0 0 -91.438 0 0]/Symbol MF
+(D)2246 3461 MS
+(D)2606 3461 MS
+(D)3125 3461 MS
+[91.438 0 0 -91.438 0 0]/Helvetica MF
+( )3390 3390 MS ( )3415 3390 MS ( )3441 3390 MS ( )3466 3390 MS ( )3492 3390 MS ( )3517 3390 MS ( )3543 3390 MS ( )3568 3390 MS ( )3594 3390 MS ( )3619 3390 MS
+( )3645 3390 MS ( )3670 3390 MS ( )3696 3390 MS ( )3722 3390 MS ( )3747 3390 MS ( )3773 3390 MS (\()3798 3390 MS (2)3828 3390 MS (\))3879 3390 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(The width of each receptive field along the )496 3641 MS
+(jth axis is equal to C *)2247 3641 MS
+[92 0 0 -92 0 0]/Symbol MF
+( D)3133 3641 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)3212 3654 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( in the original input space,)3225 3641 MS
+(and is equal to C along all axes in the normalized input space.)496 3754 MS
+(The next step of the CMAC computation is to form the vector addresses )646 3910 MS
+(A)3596 3910 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)3657 3923 MS
+%%IncludeFont: Helvetica-Oblique
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+( )3670 3935 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(of the C)3696 3910 MS
+n
+60 6 3596 3920 B
+f
+(receptive fields which contain the input point )496 4016 MS
+(S)2320 4016 MS
+(')2381 4016 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(:)2399 4016 MS
+n
+60 6 2320 4026 B
+f
+n
+798 4187 M
+859 4187 L
+CM 0.258 0.258 scale
+s
+SM
+[91.438 0 0 -91.438 0 0]/Helvetica MF
+(A)798 4170 MS
+(s)1091 4170 MS
+(s)1331 4170 MS
+(i)1508 4170 MS
+(C)1635 4170 MS
+(s)1809 4170 MS
+(s)2062 4170 MS
+(i)2251 4170 MS
+(C)2378 4170 MS
+(s)2699 4170 MS
+(s)2956 4170 MS
+(i)3149 4170 MS
+(C)3277 4170 MS
+(a)1087 4320 MS
+(a)1222 4320 MS
+(a)1479 4320 MS
+(i)2742 4320 MS
+(C)3196 4320 MS ( )3262 4320 MS ( )3288 4320 MS ( )3313 4320 MS ( )3339 4320 MS ( )3364 4320 MS ( )3390 4320 MS ( )3415 4320 MS ( )3441 4320 MS ( )3466 4320 MS
+[66.5 0 0 -66.5 0 0]/Helvetica MF
+(i)867 4203 MS
+(N)2748 4193 MS
+(N)3005 4193 MS
+(i)1141 4343 MS
+(i)1276 4343 MS
+(i)1533 4343 MS (N)1547 4343 MS
+[91.438 0 0 -91.438 0 0]/Symbol MF
+(=)924 4170 MS
+(<)1008 4170 MS
+(\242)1141 4175 MS
+(-)1200 4170 MS
+(\242)1381 4175 MS
+(-)1440 4170 MS
+(\242)1859 4175 MS
+(-)1931 4170 MS
+(\242)2111 4175 MS
+(-)2183 4170 MS
+(\242)2749 4175 MS
+(-)2825 4170 MS
+(\242)3005 4175 MS
+(-)3081 4170 MS
+(>)3405 4170 MS
+(=)927 4320 MS
+(<)1010 4320 MS
+(>)1630 4320 MS
+(=)2791 4320 MS
+[66.5 0 0 -66.5 0 0]/Helvetica MF
+(1)1140 4193 MS
+(1)1380 4193 MS
+(2)1863 4193 MS
+(2)2115 4193 MS
+(1)1153 4343 MS
+(2)1292 4343 MS
+[91.438 0 0 -91.438 0 0]/Helvetica MF
+(1)2868 4320 MS
+(2)2953 4320 MS
+(\()1268 4170 MS (\()1298 4170 MS
+(\))1526 4170 MS (%)1556 4170 MS
+(\))1703 4170 MS
+(,)1757 4170 MS
+(\()1999 4170 MS (\()2028 4170 MS
+(\))2270 4170 MS (%)2300 4170 MS
+(\))2446 4170 MS
+(,)2501 4170 MS
+(.)2547 4170 MS
+(.)2574 4170 MS
+(.)2601 4170 MS
+(,)2647 4170 MS
+(\()2893 4170 MS (\()2923 4170 MS
+(\))3168 4170 MS (%)3198 4170 MS
+(\))3344 4170 MS
+(,)1189 4320 MS
+(,)1336 4320 MS
+(.)1364 4320 MS
+(.)1391 4320 MS
+(.)1418 4320 MS
+(,)1446 4320 MS
+(,)2901 4320 MS
+(,)2998 4320 MS
+(.)3044 4320 MS
+(.)3071 4320 MS
+(.)3098 4320 MS
+(,)3144 4320 MS
+( )3492 4320 MS ( )3517 4320 MS ( )3543 4320 MS ( )3568 4320 MS ( )3594 4320 MS ( )3619 4320 MS ( )3645 4320 MS ( )3670 4320 MS ( )3696 4320 MS ( )3722 4320 MS
+( )3747 4320 MS ( )3773 4320 MS ( )3798 4320 MS ( )3824 4320 MS ( )3849 4320 MS ( )3875 4320 MS ( )3900 4320 MS ( )3926 4320 MS ( )3951 4320 MS ( )3977 4320 MS
+( )4002 4320 MS ( )4028 4320 MS (\()4053 4320 MS (3)4083 4320 MS (\))4134 4320 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(where % represents the modulus operator, and the index )496 4488 MS
+(i references the C parallel layers of)2839 4488 MS
+(receptive fields. )496 4594 MS
+(A)1161 4594 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)1222 4632 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( is the normalized N-dimensional address of one corner of the )1235 4594 MS
+(hypercubic)3774 4594 MS
+n
+60 6 1161 4604 B
+f
+(region spanned by the single excited receptive field in layer i. Due to the properties of the)496 4725 MS
+(modulus operator, the receptive field address components in the above equation are only valid)496 4831 MS
+(for )496 4937 MS
+(s')631 4937 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)695 4950 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(-i positive. A similar expression can be easily formulated, however, for )708 4937 MS
+(s')3575 4937 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)3639 4950 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(-i negative.)3652 4937 MS
+(Since the total number of receptive fields in a space of dimension N can be quite large, the)646 5093 MS
+(receptive field addresses )496 5199 MS
+(A)1539 5199 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)1600 5237 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( are typically considered as virtual rather than physical addresses.)1613 5199 MS
+n
+60 6 1539 5209 B
+f
+(The next step of the CMAC computation is then to form the scalar physical addresses A')496 5330 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)4081 5368 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( )4094 5355 MS
+(of the)4120 5330 MS
+(actual adjustable weights to be used in the output computation:)496 5461 MS
+[91.141 0 0 -91.141 0 0]/Symbol MF
+(\242)1771 5651 MS
+(=)1830 5646 MS
+[91.141 0 0 -91.141 0 0]/Helvetica MF
+(A)1704 5646 MS
+(h)1911 5646 MS
+(a)2003 5646 MS
+(a)2168 5646 MS
+(a)2492 5646 MS
+[66.285 0 0 -66.285 0 0]/Helvetica MF
+(i)1773 5669 MS
+(i)2057 5669 MS
+(i)2222 5669 MS
+(i)2547 5669 MS (N)2561 5669 MS
+[91.141 0 0 -91.141 0 0]/Helvetica MF
+(\()1958 5646 MS
+(,)2116 5646 MS
+(,)2294 5646 MS
+(.)2340 5646 MS
+(.)2367 5646 MS
+(.)2394 5646 MS
+(,)2441 5646 MS
+(\))2631 5646 MS
+[66.285 0 0 -66.285 0 0]/Helvetica MF
+(1)2068 5669 MS
+(2)2238 5669 MS
+[91.141 0 0 -91.141 0 0]/Helvetica MF
+( )2664 5646 MS ( )2690 5646 MS ( )2715 5646 MS ( )2741 5646 MS ( )2766 5646 MS ( )2792 5646 MS ( )2817 5646 MS ( )2843 5646 MS ( )2868 5646 MS ( )2894 5646 MS
+( )2919 5646 MS ( )2945 5646 MS ( )2971 5646 MS ( )2996 5646 MS ( )3022 5646 MS ( )3047 5646 MS (\()3073 5646 MS (4)3103 5646 MS (\))3154 5646 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(In this equation, h\(...\) represents any pseudo-random hashing function which operates on the)496 5815 MS
+(components )496 5921 MS
+(a)1023 5921 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(ij)1074 5934 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+( )1100 5946 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(of the virtual addresses)1126 5921 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+( )2078 5946 MS
+%%IncludeFont: Times-Roman
+[92 0 0 -92 0 0]/Times-Roman MF
+(of  )2104 5921 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(the receptive fields, producing uniformly distributed)2227 5921 MS
+(scalar addresses in the physical weight memory of size M.)496 6029 MS
+showpage
+%%Page: 3 3
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(3)2495 6197 MS
+(Finally, the CMAC scalar output y\()646 603 MS
+(S)2038 603 MS
+(\))2099 603 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+( )2130 603 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(is just the average of the addressed weights:)2156 603 MS
+n
+60 6 2038 613 B
+f
+1 j
+1 setlinecap
+16 sl
+n
+1864 864 M
+1915 864 L
+CM 0.258 0.258 scale
+s
+SM
+n
+2104 816 M
+2181 816 L
+CM 0.258 0.258 scale
+s
+SM
+[91.559 0 0 -91.559 0 0]/Helvetica MF
+(y)1783 848 MS
+(S)1861 848 MS
+(C)2109 911 MS
+(W)2354 848 MS
+(A)2475 848 MS
+[66.586 0 0 -66.586 0 0]/Helvetica MF
+(i)2543 871 MS
+(i)2228 944 MS
+(C)2244 739 MS
+[91.559 0 0 -91.559 0 0]/Helvetica MF
+(\()1828 848 MS
+(\))1920 848 MS
+([)2445 848 MS
+(])2571 848 MS
+[91.559 0 0 -91.559 0 0]/Symbol MF
+(=)1999 848 MS
+(\242)2542 853 MS
+[66.586 0 0 -66.586 0 0]/Symbol MF
+(=)2243 944 MS
+[149.82 0 0 -149.82 0 0]/Symbol MF
+(\345)2218 858 MS
+[91.559 0 0 -91.559 0 0]/Helvetica MF
+(1)2121 781 MS
+[66.586 0 0 -66.586 0 0]/Helvetica MF
+(1)2278 944 MS
+[91.559 0 0 -91.559 0 0]/Helvetica MF
+( )2591 848 MS ( )2616 848 MS ( )2642 848 MS ( )2667 848 MS ( )2693 848 MS ( )2718 848 MS ( )2744 848 MS ( )2770 848 MS ( )2795 848 MS ( )2821 848 MS
+( )2846 848 MS ( )2872 848 MS ( )2897 848 MS ( )2923 848 MS ( )2948 848 MS ( )2974 848 MS (\()2999 848 MS (5)3029 848 MS (\))3081 848 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(A vector CMAC output is produced by simply considering the weight memory locations to)496 1092 MS
+(contain vector rather than scalar values, and by performing a vector rather than scalar average)496 1198 MS
+(in the above equation. The weight memory W can contain integer or real values, depending on)496 1304 MS
+(the desired implementation.)496 1410 MS
+(Network training is typically based on observed training data pairs )646 1566 MS
+(S)3344 1566 MS
+[58 0 0 -58 0 0]/Helvetica MF
+( )3405 1604 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(and y)3421 1566 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(d)3645 1579 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(\()3677 1566 MS
+(S)3708 1566 MS
+n
+60 6 3344 1576 B
+f
+(\), where y)3769 1566 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(d)4172 1579 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(\()4204 1566 MS
+(S)4235 1566 MS
+n
+60 6 3708 1576 B
+f
+(\))4296 1566 MS
+n
+60 6 4235 1576 B
+f
+(is the desired network output in response to the vector input )496 1672 MS
+(S)2958 1672 MS
+(. The memory training adjustment)3019 1672 MS
+n
+60 6 2958 1682 B
+f
+[92 0 0 -92 0 0]/Symbol MF
+(D)496 1785 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(W is given by:)552 1785 MS
+n
+2272 1961 M
+2323 1961 L
+CM 0.258 0.258 scale
+s
+SM
+n
+2555 1961 M
+2606 1961 L
+CM 0.258 0.258 scale
+s
+SM
+[91.141 0 0 -91.141 0 0]/Symbol MF
+(D)1683 1945 MS
+[91.141 0 0 -91.141 0 0]/Helvetica MF
+(W)1739 1945 MS
+(y)2137 1945 MS
+(S)2269 1945 MS
+(y)2474 1945 MS
+(S)2552 1945 MS
+[66.285 0 0 -66.285 0 0]/Helvetica MF
+(d)2191 1968 MS
+[91.141 0 0 -91.141 0 0]/Symbol MF
+(=)1863 1945 MS
+(-)2388 1945 MS
+(b)1946 1945 MS
+[91.141 0 0 -91.141 0 0]/Helvetica MF
+(*)2026 1945 MS
+(\()2090 1945 MS
+(\()2236 1945 MS
+(\))2328 1945 MS
+(\()2519 1945 MS
+(\))2611 1945 MS
+(\))2653 1945 MS
+( )2686 1945 MS ( )2711 1945 MS ( )2737 1945 MS ( )2762 1945 MS ( )2788 1945 MS ( )2813 1945 MS ( )2839 1945 MS ( )2864 1945 MS ( )2890 1945 MS ( )2915 1945 MS
+( )2941 1945 MS ( )2966 1945 MS ( )2992 1945 MS ( )3017 1945 MS ( )3043 1945 MS ( )3069 1945 MS (\()3094 1945 MS (6)3124 1945 MS (\))3175 1945 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(where the same value )496 2121 MS
+[92 0 0 -92 0 0]/Symbol MF
+(D)1420 2121 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(W is added to each of the C memory locations W[)1476 2121 MS
+(A')3507 2121 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)3586 2134 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(] accessed in the)3599 2121 MS
+(computation of y\()496 2234 MS
+(S)1203 2234 MS
+(\). This is equivalent to the well known LMS adaptation rule for linear adaptive)1264 2234 MS
+n
+60 6 1203 2244 B
+f
+(elements. )496 2347 MS
+[92 0 0 -92 0 0]/Symbol MF
+(b)921 2347 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( is a constant )972 2347 MS
+(training gain)1541 2347 MS
+(. If )2043 2347 MS
+[92 0 0 -92 0 0]/Symbol MF
+(b)2174 2347 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( is 1.0, the weights are adjusted to force the network)2225 2347 MS
+n
+501 6 1541 2357 B
+f
+(output y\()496 2467 MS
+(S)854 2467 MS
+(\) to be exactly equal to the training target y)915 2467 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(d)2657 2480 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(\()2689 2467 MS
+(S)2720 2467 MS
+n
+60 6 854 2477 B
+f
+(\). If )2781 2467 MS
+[92 0 0 -92 0 0]/Symbol MF
+(b)2943 2467 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( is 0.5, the network output is)2994 2467 MS
+n
+60 6 2720 2477 B
+f
+(adjusted to fall halfway between the old output value and the training target. If )496 2587 MS
+[92 0 0 -92 0 0]/Symbol MF
+(b)3682 2587 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( is 0.0, the)3733 2587 MS
+(weights are not changed.)496 2700 MS
+[92 0 0 -92 0 0]/Helvetica-Bold MF
+(EXTENSIONS TO THE ALBUS CMAC NEURAL NETWORK)496 2959 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(In this section we discuss extensions to the conventional )646 3116 MS
+(Albus CMAC neural network.)2970 3116 MS
+(When appropriate, modifications to the equations of the previous section are presented in a)496 3222 MS
+(form intended to facilitate software implementation. When all of these extensions are)496 3328 MS
+(implemented, the algorithms and learning system performance can be quite different than for)496 3434 MS
+(the conventional )496 3540 MS
+(Albus CMAC. However, the extensions are faithful to the original learning)1190 3540 MS
+(system concepts of )496 3646 MS
+(Albus, and thus are still appropriately called CMAC algorithms. Note that)1311 3646 MS
+(some of the frequently described limitations of CMAC \(such as only learning integer mappings\))496 3752 MS
+(are in fact characteristics specific to the original )496 3858 MS
+(Albus algorithm, and are neither properties of)2454 3858 MS
+(nor limitations of the general CMAC concept.)496 3964 MS
+[92 0 0 -92 0 0]/Helvetica-Bold MF
+(Organization of Receptive Fields)496 4173 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(The descriptions in the first section apply to the classic )646 4330 MS
+(Albus CMAC [2,4-7]. Research at)2893 4330 MS
+(UNH [12-14] and elsewhere [14,15] has investigated alternative lattice arrangements for the)496 4436 MS
+(receptive fields which provide more uniform local generalization in higher dimensional input)496 4542 MS
+(spaces. The receptive field mapping used in the conventional CMAC implementation has three)496 4648 MS
+(key features which it is desirable to retain:)496 4754 MS
+(1. Each input in the )646 4910 MS
+(multi-dimensional input state space falls into exactly the same number)1460 4910 MS
+(of receptive fields \(C\), and this number of overlapping fields is not dependent on the)646 5016 MS
+(dimensionality N of the space or the total size M of the physical weight memory.)646 5122 MS
+(2. Regardless of the operating point in the )646 5278 MS
+(multi-dimensional space, a change of one)2384 5278 MS
+(quantization level )646 5391 MS
+[92 0 0 -92 0 0]/Symbol MF
+(D)1380 5391 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)1436 5404 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( in any input parameter causes exactly one active receptive field to)1449 5391 MS
+(become inactive and one new receptive field to become active. This provides for uniform)646 5504 MS
+(quantization within the space.)646 5610 MS
+(3. The receptive fields are arranged in a geometrically regular way, such that the)646 5766 MS
+(coordinates of the C excited receptive fields for any input can easily be determined in)646 5872 MS
+showpage
+%%Page: 4 4
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(4)2495 6197 MS
+(software, or generated in hardware, without having to compare to independent coordinates)646 603 MS
+(stored for each of the very many receptive fields.)646 709 MS
+(The conventional )646 865 MS
+(Albus CMAC implementation achieves these properties by offsetting the)1371 865 MS
+(parallel layers of receptive fields along )496 971 MS
+(hyperdiagonals in the input space \(the effect of the )2081 971 MS
+(s')4173 971 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)4237 984 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(-i)4250 971 MS
+(terms in equation 3\). All inputs fall within the same number of receptive fields. However, some)496 1077 MS
+(inputs fall near the centers of several receptive fields while other inputs fall near the centers of)496 1183 MS
+(no receptive fields. This results in )496 1289 MS
+(inhomogeneous and )1883 1289 MS
+(anisotropic generalization within the)2742 1289 MS
+(input state space. Ideally, the distribution of receptive fields should be uniform in the )496 1395 MS
+(multi-)3936 1395 MS
+(dimensional input space unless prior knowledge of the function to be learned dictates)496 1501 MS
+(otherwise.)496 1607 MS
+(The above three desirable features of the CMAC mapping can be used to place constraints)646 1763 MS
+(on the possible arrangements of receptive fields, through which new arrangements can be)496 1869 MS
+(generated. For the following discussion, assume that the N-dimensional input space has been)496 1975 MS
+(normalized using equation 2 such that the widths of the receptive fields relative to all N)496 2081 MS
+(components of the input are equal to C \(the generalization parameter\). The first and third items)496 2187 MS
+(above suggest that the arrangement should be periodic in the normalized input space, with)496 2293 MS
+(period C. This is equivalent to assuming that the receptive fields will be arranged in C parallel)496 2399 MS
+(layers, each with non-overlapping receptive fields, and that only the offsets of each layer)496 2505 MS
+(relative to the others can be varied when generating new receptive field distributions. In this)496 2611 MS
+(case, the distribution of receptive fields throughout the space is uniquely defined by the)496 2717 MS
+(arrangement of C receptive field centers in an N-dimensional )496 2823 MS
+(hypercube of side C \(referred to)2999 2823 MS
+(as the )496 2929 MS
+(reference )773 2929 MS
+(hypercube)1189 2929 MS
+(\), with one receptive field centered at the corner of the )1617 2929 MS
+(hypercube)3846 2929 MS
+n
+843 6 773 2939 B
+f
+(\(coordinate <0,0,...0>\).)496 3035 MS
+(The individual receptive fields are )646 3191 MS
+(hypercubes of side C in the normalized input space, and)2035 3191 MS
+(C receptive field centers are located inside of any region bounded by a )496 3297 MS
+(hypercube of side C.)3396 3297 MS
+(Item 2 in the above list \(uniform segmentation of the space\) is thus only achieved if the C)496 3403 MS
+(receptive field centers are spaced uniformly \(with integer separation\) when projected onto each)496 3509 MS
+(of the N axes of the reference )496 3615 MS
+(hypercube. Any arrangement which satisfies these criteria)1739 3615 MS
+(qualifies as a CMAC mapping according to the three items above. However, many of the)496 3721 MS
+(possible arrangements \(such as the conventional CMAC mapping\) have locally )496 3827 MS
+(nonuniform)3728 3827 MS
+(distributions.)496 3933 MS
+(Parks and )646 4089 MS
+(Militzer [15] studied the arrangement of receptive fields in CMAC networks using)1087 4089 MS
+(distance between nearest neighbors as the evaluation criteria, based on the assumption that)496 4195 MS
+(the most uniform distribution would have the greatest distance between nearest neighbors)496 4301 MS
+(\(given a fixed receptive field density in the space\). They further assumed that the receptive field)496 4407 MS
+(centers were arranged in a lattice defined by a )496 4513 MS
+(displacement vector)2410 4513 MS
+n
+816 6 2410 4523 B
+f
+1 j
+1 setlinecap
+16 sl
+n
+1737 4682 M
+1792 4682 L
+CM 0.258 0.258 scale
+s
+SM
+[91.141 0 0 -91.141 0 0]/Helvetica MF
+(D)1729 4666 MS
+(d)1987 4666 MS
+(d)2124 4666 MS
+(d)2421 4666 MS
+[66.285 0 0 -66.285 0 0]/Helvetica MF
+(N)2470 4689 MS
+[91.141 0 0 -91.141 0 0]/Symbol MF
+(=)1826 4666 MS
+(<)1910 4666 MS
+(>)2552 4666 MS
+[66.285 0 0 -66.285 0 0]/Helvetica MF
+(1)2036 4689 MS
+(2)2177 4689 MS
+[91.141 0 0 -91.141 0 0]/Helvetica MF
+(,)2072 4666 MS
+(,)2222 4666 MS
+(.)2268 4666 MS
+(.)2295 4666 MS
+(.)2323 4666 MS
+(,)2369 4666 MS
+( )2632 4666 MS ( )2658 4666 MS ( )2683 4666 MS ( )2709 4666 MS ( )2734 4666 MS ( )2760 4666 MS ( )2785 4666 MS ( )2811 4666 MS ( )2836 4666 MS ( )2862 4666 MS
+( )2887 4666 MS ( )2913 4666 MS ( )2938 4666 MS ( )2964 4666 MS ( )2989 4666 MS ( )3015 4666 MS (\()3040 4666 MS (7)3070 4666 MS (\))3122 4666 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(such that the coordinate of the )496 4835 MS
+(ith receptive field in the reference )1763 4835 MS
+(hypercube was)3146 4835 MS
+[91.141 0 0 -91.141 0 0]/Symbol MF
+(<)902 4988 MS
+(>)2658 4988 MS
+(=)3006 4988 MS
+[91.141 0 0 -91.141 0 0]/Helvetica MF
+(\()976 4988 MS
+(*)1066 4988 MS
+(\))1211 4988 MS
+(%)1250 4988 MS
+(,)1421 4988 MS
+(\()1470 4988 MS
+(*)1579 4988 MS
+(\))1749 4988 MS
+(%)1788 4988 MS
+(,)1959 4988 MS
+(.)2005 4988 MS
+(.)2032 4988 MS
+(.)2059 4988 MS
+(,)2105 4988 MS
+(\()2154 4988 MS
+(*)2245 4988 MS
+(\))2419 4988 MS
+(%)2458 4988 MS
+(,)3111 4988 MS
+(,)3207 4988 MS
+(.)3253 4988 MS
+(.)3281 4988 MS
+(.)3308 4988 MS
+(,)3354 4988 MS
+(i)1017 4988 MS
+(d)1120 4988 MS
+(C)1359 4988 MS
+(i)1530 4988 MS
+(d)1645 4988 MS
+(C)1897 4988 MS
+(i)2196 4988 MS
+(d)2311 4988 MS
+(C)2567 4988 MS
+(i)2964 4988 MS
+(C)3406 4988 MS ( )3472 4988 MS ( )3497 4988 MS ( )3523 4988 MS ( )3548 4988 MS ( )3574 4988 MS ( )3599 4988 MS ( )3625 4988 MS ( )3650 4988 MS ( )3676 4988 MS
+[66.285 0 0 -66.285 0 0]/Helvetica MF
+(N)2360 5011 MS
+(1)1169 5011 MS
+(2)1699 5011 MS
+[91.141 0 0 -91.141 0 0]/Helvetica MF
+(1)3078 4988 MS
+(2)3163 4988 MS
+( )3702 4988 MS ( )3727 4988 MS ( )3753 4988 MS ( )3778 4988 MS ( )3804 4988 MS ( )3829 4988 MS ( )3855 4988 MS (\()3880 4988 MS (8)3910 4988 MS (\))3961 4988 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(In these terms, the conventional CMAC would be defined by a lattice displacement vector of)496 5157 MS
+n
+1770 5327 M
+1825 5327 L
+CM 0.258 0.258 scale
+s
+SM
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+(D)1762 5310 MS
+[66.664 0 0 -66.664 0 0]/Helvetica MF
+(A)1837 5343 MS (l)1882 5343 MS (b)1896 5343 MS (u)1934 5343 MS (s)1971 5343 MS
+[91.664 0 0 -91.664 0 0]/Symbol MF
+(=)2049 5310 MS
+(<)2133 5310 MS
+(>)2518 5310 MS
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+(1)2204 5310 MS
+(1)2276 5310 MS
+(1)2449 5310 MS
+(,)2249 5310 MS
+(,)2321 5310 MS
+(.)2367 5310 MS
+(.)2394 5310 MS
+(.)2421 5310 MS
+( )2598 5310 MS ( )2623 5310 MS ( )2649 5310 MS ( )2674 5310 MS ( )2700 5310 MS ( )2725 5310 MS ( )2751 5310 MS ( )2776 5310 MS ( )2802 5310 MS ( )2827 5310 MS
+( )2853 5310 MS ( )2878 5310 MS ( )2904 5310 MS ( )2929 5310 MS ( )2955 5310 MS ( )2981 5310 MS (\()3006 5310 MS (9)3036 5310 MS (\))3087 5310 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(They performed an exhaustive search of such lattice arrangements for various values of C and)496 5488 MS
+(N, and developed tables of best displacement vectors according to their nearest neighbor)496 5594 MS
+(distance criteria.)496 5700 MS
+(We have developed a simple heuristic for selecting similar displacement vectors for any)646 5856 MS
+(values of C and N which provide lattice arrangements equivalent to those found by Parks and)496 5962 MS
+showpage
+%%Page: 5 5
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(5)2495 6197 MS
+(Militzer [14] without performing a search [12-14]. First, we choose the set of integers in the)496 603 MS
+(range 1 to C/2 which are not factors of C or integer products of factors of C \(the value 1 can be)496 709 MS
+(included in the set\). These are the candidate values for the displacement vector components)496 815 MS
+(\(guaranteeing uniform projection of the centers on the axes of the reference )496 921 MS
+(hypercube\), from)3611 921 MS
+(which N must be selected. If there are more than N candidate values, we choose N \(there are)496 1027 MS
+(multiple nearly equivalent arrangements\). If there are less than N candidates, the best that can)496 1133 MS
+(be done is to use all of the candidate values with a minimum number of repetitions of any one)496 1239 MS
+(value. However, the resulting mapping will be )496 1345 MS
+(diagonalized \(locally )2364 1345 MS
+(nonuniform\) in some)3214 1345 MS
+(projections to lower dimensional spaces. A better solution in this case is to increase C, in order)496 1451 MS
+(to achieve at least N candidates for the displacement vector.)496 1557 MS
+(For a CMAC with a three-dimensional input and a generalization of 16, the candidate values)646 1713 MS
+(for the displacement vector are 1, 3, 5, and 7. A typical displacement vector might be <1,3,5>)496 1819 MS
+(which would produce receptive field locations at <0,0,0>, <1,3,5>, <2,6,10>, and so forth, within)496 1925 MS
+(the reference cube.)496 2031 MS
+(The CMAC computations described in the first section can easily be modified to)646 2187 MS
+(accommodate the displacement vector approach to specifying receptive field placement. In this)496 2293 MS
+(case, the virtual addresses of the excited receptive fields are given by)496 2399 MS
+1 j
+1 setlinecap
+16 sl
+n
+773 2570 M
+834 2570 L
+CM 0.258 0.258 scale
+s
+SM
+[91.438 0 0 -91.438 0 0]/Helvetica MF
+(A)773 2553 MS
+(s)1066 2553 MS
+(s)1306 2553 MS
+(i)1483 2553 MS
+(d)1573 2553 MS
+(C)1773 2553 MS
+(s)1947 2553 MS
+(s)2199 2553 MS
+(i)2388 2553 MS
+(d)2478 2553 MS
+(C)2691 2553 MS
+(s)3012 2553 MS
+(s)3268 2553 MS
+(i)3462 2553 MS
+(d)3552 2553 MS
+(C)3768 2553 MS
+(a)1062 2703 MS
+(a)1197 2703 MS
+(a)1454 2703 MS
+(i)2717 2703 MS
+(C)3171 2703 MS ( )3237 2703 MS ( )3263 2703 MS ( )3288 2703 MS ( )3314 2703 MS ( )3339 2703 MS ( )3365 2703 MS ( )3390 2703 MS ( )3416 2703 MS ( )3441 2703 MS
+[66.5 0 0 -66.5 0 0]/Helvetica MF
+(i)842 2586 MS
+(N)3061 2576 MS
+(N)3317 2576 MS
+(N)3601 2576 MS
+(i)1116 2726 MS
+(i)1251 2726 MS
+(i)1508 2726 MS (N)1522 2726 MS
+[91.438 0 0 -91.438 0 0]/Symbol MF
+(=)899 2553 MS
+(<)983 2553 MS
+(\242)1116 2558 MS
+(-)1175 2553 MS
+(\242)1356 2558 MS
+(-)1415 2553 MS
+(\242)1996 2558 MS
+(-)2068 2553 MS
+(\242)2249 2558 MS
+(-)2320 2553 MS
+(\242)3061 2558 MS
+(-)3137 2553 MS
+(\242)3318 2558 MS
+(-)3394 2553 MS
+(>)3896 2553 MS
+(=)902 2703 MS
+(<)985 2703 MS
+(>)1605 2703 MS
+(=)2766 2703 MS
+[66.5 0 0 -66.5 0 0]/Helvetica MF
+(1)1115 2576 MS
+(1)1355 2576 MS
+(1)1622 2576 MS
+(2)2000 2576 MS
+(2)2252 2576 MS
+(2)2532 2576 MS
+(1)1128 2726 MS
+(2)1267 2726 MS
+[91.438 0 0 -91.438 0 0]/Helvetica MF
+(1)2843 2703 MS
+(2)2928 2703 MS
+(\()1243 2553 MS (\()1273 2553 MS
+(*)1519 2553 MS
+(\))1664 2553 MS (%)1694 2553 MS
+(\))1840 2553 MS
+(,)1895 2553 MS
+(\()2136 2553 MS (\()2166 2553 MS
+(*)2425 2553 MS
+(\))2582 2553 MS (%)2612 2553 MS
+(\))2758 2553 MS
+(,)2813 2553 MS
+(.)2859 2553 MS
+(.)2886 2553 MS
+(.)2914 2553 MS
+(,)2960 2553 MS
+(\()3205 2553 MS (\()3235 2553 MS
+(*)3498 2553 MS
+(\))3660 2553 MS (%)3689 2553 MS
+(\))3836 2553 MS
+(,)1164 2703 MS
+(,)1311 2703 MS
+(.)1339 2703 MS
+(.)1366 2703 MS
+(.)1393 2703 MS
+(,)1421 2703 MS
+(,)2876 2703 MS
+(,)2973 2703 MS
+(.)3019 2703 MS
+(.)3046 2703 MS
+(.)3073 2703 MS
+(,)3119 2703 MS
+( )3467 2703 MS ( )3492 2703 MS ( )3518 2703 MS ( )3543 2703 MS ( )3569 2703 MS ( )3594 2703 MS ( )3620 2703 MS ( )3645 2703 MS ( )3671 2703 MS ( )3697 2703 MS
+( )3722 2703 MS ( )3748 2703 MS ( )3773 2703 MS ( )3799 2703 MS ( )3824 2703 MS ( )3850 2703 MS ( )3875 2703 MS ( )3901 2703 MS ( )3926 2703 MS ( )3952 2703 MS
+( )3977 2703 MS ( )4003 2703 MS (\()4028 2703 MS (1)4058 2703 MS (0)4109 2703 MS (\))4161 2703 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(In place of equation 3. Due to the properties of the modulus operator, the receptive field)496 2871 MS
+(address components in the above equation are only valid for )496 2977 MS
+(s')2981 2977 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)3045 2990 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(-i*d)3058 2977 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)3196 2990 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( positive. A similar)3209 2977 MS
+(expression can be easily formulated, however, for )496 3083 MS
+(s')2546 3083 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)2610 3096 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(-i*d)2623 3083 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)2761 3096 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( negative.)2774 3083 MS
+(It is impossible to quantify the improvement in performance to be gained in the general case)646 3239 MS
+(by using a relatively uniform lattice of receptive fields, rather than the )496 3345 MS
+(diagonalized arrangement)3322 3345 MS
+(used by )496 3451 MS
+(Albus. In our experience, a more uniform arrangement of receptive fields typically)843 3451 MS
+(provides learning system  performance equal to or better than that achieved in the same)496 3557 MS
+(application using the )496 3663 MS
+(Albus arrangement \(sometimes substantially better\), with relatively little)1360 3663 MS
+(increase in computational effort. We typically select C to be the smallest power of 2 which is)496 3769 MS
+(equal to or greater than 4*N, in which case a good displacement vector is simply the first N odd)496 3875 MS
+(integers [12].)496 3981 MS
+[92 0 0 -92 0 0]/Helvetica-Bold MF
+(Receptive Field Sensitivity Functions)496 4190 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(We have also investigated CMAC networks with graded, rather than all-or-none, receptive)646 4347 MS
+(field sensitivity functions [12-14], as have others [16]. In this case, the CMAC output is)496 4453 MS
+(influenced more by receptive fields for which the input vector is near the center of the active)496 4559 MS
+(range, and is influenced less by receptive fields for which the input is near the limits of the)496 4665 MS
+(active range. The CMAC output is then a weighted average of the C addressed adjustable)496 4771 MS
+(parameters, rather than a simple average as in equation 5. This provides a continuous function)496 4877 MS
+(approximation \(rather than the piece-wise constant function approximation of the conventional)496 4983 MS
+(CMAC\). Any function which is maximum at the center and decreases smoothly to near 0 at the)496 5089 MS
+(edges is satisfactory \(e.g., linear decrease\) for generating continuous outputs. Smooth outputs)496 5195 MS
+(require that the slope of the function also approach 0 near the receptive field edges \(e.g., cubic)496 5301 MS
+(spline, )496 5407 MS
+(gaussian, etc.\). The critical issue is how to form the )787 5407 MS
+(multi-dimensional receptive field)2904 5407 MS
+(sensitivity function from the one-dimensional primitives.)496 5513 MS
+(An obvious choice would be to simply base the receptive field sensitivity function on the)646 5669 MS
+(radial distance from the center of the receptive field. While there is substantial evidence)496 5775 MS
+(supporting the use of radial basis functions for general system approximation [17,18], the fixed,)496 5881 MS
+(relatively sparse distribution of receptive fields inherent in CMAC family networks must be)496 5987 MS
+showpage
+%%Page: 6 6
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(6)2495 6197 MS
+(considered. In the normalized input space defined in the previous section, each CMAC)496 603 MS
+(receptive field spans the interior of a )496 709 MS
+(hypercube of side C. The distance from the center to the)2002 709 MS
+(nearest edge \(the center of a face of the )496 815 MS
+(hypercube\) of the receptive field is C/2, while the)2167 815 MS
+(distance from the center to the farthest edge \(a corner of the )496 946 MS
+(hypercube\) is N)2988 946 MS
+/IsChar{exch/CharStrings get exch known}bd/MapCh{3 -1 roll/Encoding get 3 1
+roll put}bd/MapDegree{dup 16#b0 exch/degree IsChar{/degree}{/ring}ifelse MapCh}
+bd/MapBB{dup 16#a6 exch/brokenbar IsChar{/brokenbar}{/bar}ifelse MapCh}bd
+/reencode{findfont begin currentdict dup length dict begin{1 index/FID ne{def}
+{pop pop}ifelse}forall/FontName exch def dup length 0 ne{/Encoding Encoding 256
+array copy def 0 exch{dup type/nametype eq{Encoding 2 index 2 index put pop 1
+add}{exch pop}ifelse}forall}if pop currentdict dup end end/FontName get exch
+definefont dup MapDegree MapBB}bd/LATENC[0/grave/acute/circumflex/tilde/macron
+/breve/dotaccent/dieresis/ring/cedilla/hungarumlaut/ogonek/caron/dotlessi/fi/fl
+/Lslash/lslash/Zcaron/zcaron/minus/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/space/exclam/quotedbl
+/numbersign/dollar/percent/ampersand/quotesingle/parenleft/parenright/asterisk
+/plus/comma/hyphen/period/slash/zero/one/two/three/four/five/six/seven/eight
+/nine/colon/semicolon/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M
+/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright/asciicircum
+/underscore/grave/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft
+/bar/braceright/asciitilde/.notdef/.notdef/.notdef/quotesinglbase/florin
+/quotedblbase/ellipsis/dagger/daggerdbl/circumflex/perthousand/Scaron
+/guilsinglleft/OE/.notdef/.notdef/.notdef/.notdef/quoteleft/quoteright
+/quotedblleft/quotedblright/bullet/endash/emdash/tilde/trademark/scaron
+/guilsinglright/oe/.notdef/.notdef/Ydieresis/.notdef/exclamdown/cent/sterling
+/currency/yen/brokenbar/section/dieresis/copyright/ordfeminine/guillemotleft
+/logicalnot/hyphen/registered/macron/degree/plusminus/twosuperior/threesuperior
+/acute/mu/paragraph/periodcentered/cedilla/onesuperior/ordmasculine
+/guillemotright/onequarter/onehalf/threequarters/questiondown/Agrave/Aacute
+/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla/Egrave/Eacute/Ecircumflex
+/Edieresis/Igrave/Iacute/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute
+/Ocircumflex/Otilde/Odieresis/multiply/Oslash/Ugrave/Uacute/Ucircumflex
+/Udieresis/Yacute/Thorn/germandbls/agrave/aacute/acircumflex/atilde/adieresis
+/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave/iacute
+/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex/otilde/odieresis
+/divide/oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn/ydieresis]def
+LATENC /_Helvetica /Helvetica reencode
+[92 0 0 -92 0 0]/_Helvetica MF
+(\275)3631 921 MS
+( C/2. A radial)3708 946 MS
+(basis function which tapers to a small value at the nearest edge of the receptive field will be)496 1052 MS
+(very small in most of the corner region, confining the significant response to a limited region of)496 1158 MS
+(the hypothetical receptive field. On the other hand, if the radial basis function tapers to a small)496 1264 MS
+(value at the corner, it will have a significant output at the nearest edge of the receptive field,)496 1370 MS
+(which is counter to the objective of a tapered receptive field.)496 1476 MS
+(A second alternative is to use the distance from the input point to the nearest face of the)646 1632 MS
+(receptive field as the single parameter in the sensitivity function \(rather than the radial distance)496 1738 MS
+(from the center\). This provides a receptive field sensitivity function which is maximum at the)496 1844 MS
+(center and which has the same value at all points on its boundary. The sensitivity function will)496 1950 MS
+(be continuous throughout the receptive field, but will have discontinuous slopes along select)496 2056 MS
+(hyperplanes. We have found this to be the preferred alternative for CMAC neural networks [12].)496 2162 MS
+(The CMAC computations described in the previous sections can easily be modified to)646 2318 MS
+(accommodate non-constant receptive field sensitivity functions. Let )496 2424 MS
+(a)3248 2424 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(ij)3299 2437 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+( represent the )3325 2424 MS
+(jth)3920 2424 MS
+(component of the receptive field virtual address )496 2530 MS
+(A)2451 2530 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)2512 2543 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+( in the normalized input space, as given in)2525 2530 MS
+n
+60 6 2451 2540 B
+f
+(equation 10. Let )496 2636 MS
+(s'')1183 2636 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)1265 2649 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+( represent the )1278 2636 MS
+(jth component of the real-valued, normalized input vector )1873 2636 MS
+(S)4216 2636 MS
+('':)4277 2636 MS
+n
+60 6 4216 2646 B
+f
+1 j
+1 setlinecap
+16 sl
+n
+1212 2873 M
+1264 2873 L
+CM 0.258 0.258 scale
+s
+SM
+n
+2329 2825 M
+2441 2825 L
+CM 0.258 0.258 scale
+s
+SM
+n
+2524 2825 M
+2648 2825 L
+CM 0.258 0.258 scale
+s
+SM
+n
+2879 2825 M
+3007 2825 L
+CM 0.258 0.258 scale
+s
+SM
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+(S)1209 2856 MS
+(s)1510 2856 MS
+(s)1652 2856 MS
+(s)1954 2856 MS
+(s)2343 2789 MS
+(s)2538 2789 MS
+(s)2893 2789 MS
+[66.664 0 0 -66.664 0 0]/Helvetica MF
+(N)2000 2879 MS
+(N)2939 2812 MS
+(N)2947 2942 MS
+[91.664 0 0 -91.664 0 0]/Symbol MF
+(\262)1268 2816 MS
+(=)1343 2856 MS
+(<)1426 2856 MS
+(\242)1556 2861 MS
+(\242)1568 2861 MS
+(\242)1699 2861 MS
+(\242)1710 2861 MS
+(\242)2001 2861 MS
+(\242)2012 2861 MS
+(>)2076 2856 MS
+(=)2160 2856 MS
+(<)2243 2856 MS
+(>)3032 2856 MS
+[66.664 0 0 -66.664 0 0]/Helvetica MF
+(1)1556 2879 MS
+(2)1702 2879 MS
+(1)2389 2812 MS
+(1)2398 2942 MS
+(2)2588 2812 MS
+(2)2597 2942 MS
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+(,)1600 2856 MS
+(,)1755 2856 MS
+(.)1801 2856 MS
+(.)1829 2856 MS
+(.)1856 2856 MS
+(,)1902 2856 MS
+(,)2469 2856 MS
+(,)2677 2856 MS
+(.)2723 2856 MS
+(.)2750 2856 MS
+(.)2778 2856 MS
+(,)2824 2856 MS
+[91.664 0 0 -91.664 0 0]/Symbol MF
+(D)2337 2919 MS
+(D)2532 2919 MS
+(D)2887 2919 MS
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+( )3109 2856 MS ( )3134 2856 MS ( )3160 2856 MS ( )3185 2856 MS ( )3211 2856 MS ( )3236 2856 MS ( )3262 2856 MS ( )3287 2856 MS ( )3313 2856 MS ( )3338 2856 MS
+( )3364 2856 MS ( )3389 2856 MS ( )3415 2856 MS ( )3440 2856 MS ( )3466 2856 MS ( )3491 2856 MS (\()3517 2856 MS (1)3547 2856 MS (1)3598 2856 MS (\))3650 2856 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+(The corresponding faces of the receptive field occur at )496 3092 MS
+(s'')2742 3092 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)2824 3105 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+( = )2837 3092 MS
+(a)2943 3092 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(ij)2994 3105 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+( - 0.5 and )3020 3092 MS
+(s'')3436 3092 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)3518 3105 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+( = )3531 3092 MS
+(a)3637 3092 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(ij)3688 3105 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+( + C - 0.5 in the)3714 3092 MS
+(normalized space. For an arbitrary input point, the minimum distance )496 3205 MS
+[92 0 0 -92 0 0]/Symbol MF
+(d)3319 3205 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)3364 3218 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+( to any face of receptive)3377 3205 MS
+(field )496 3318 MS
+(i is then given by:)691 3318 MS
+[91.438 0 0 -91.438 0 0]/Symbol MF
+(d)1036 3471 MS
+[66.5 0 0 -66.5 0 0]/Helvetica MF
+(i)1084 3494 MS
+(i)1442 3494 MS
+(i)1637 3494 MS (j)1652 3494 MS
+(i)2053 3494 MS (j)2067 3494 MS
+(i)2676 3494 MS
+[91.438 0 0 -91.438 0 0]/Helvetica MF
+(s)1391 3471 MS
+(a)1583 3471 MS
+(a)1998 3471 MS
+(C)2208 3471 MS
+(s)2625 3471 MS
+(j)2863 3471 MS
+(N)3213 3471 MS ( )3279 3471 MS ( )3305 3471 MS ( )3330 3471 MS ( )3356 3471 MS ( )3381 3471 MS ( )3407 3471 MS ( )3432 3471 MS ( )3458 3471 MS ( )3483 3471 MS
+[91.438 0 0 -91.438 0 0]/Symbol MF
+(=)1135 3471 MS
+(\242)1441 3476 MS
+(\242)1452 3476 MS
+(-)1500 3471 MS
+(+)1709 3471 MS
+(+)2125 3471 MS
+(-)2306 3471 MS
+(-)2541 3471 MS
+(\242)2674 3476 MS
+(\242)2686 3476 MS
+(=)2906 3471 MS
+[91.438 0 0 -91.438 0 0]/Helvetica MF
+(m)1210 3471 MS (i)1286 3471 MS (n)1306 3471 MS (\()1358 3471 MS
+(.)1840 3471 MS
+(,)1909 3471 MS
+(.)2436 3471 MS
+(\))2703 3471 MS
+(,)3010 3471 MS
+(,)3077 3471 MS
+(.)3104 3471 MS
+(.)3131 3471 MS
+(.)3159 3471 MS
+(,)3186 3471 MS
+(0)1793 3471 MS
+(5)1862 3471 MS
+(0)2389 3471 MS
+(5)2458 3471 MS
+(1)2977 3471 MS
+(2)3032 3471 MS
+( )3509 3471 MS ( )3534 3471 MS ( )3560 3471 MS ( )3585 3471 MS ( )3611 3471 MS ( )3636 3471 MS ( )3662 3471 MS (\()3687 3471 MS (1)3717 3471 MS (2)3769 3471 MS
+(\))3820 3471 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+(In this case, )496 3664 MS
+[92 0 0 -92 0 0]/Symbol MF
+(d)1014 3664 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)1059 3677 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+( = 0 corresponds to any point on a face of the receptive field, while )1072 3664 MS
+[92 0 0 -92 0 0]/Symbol MF
+(d)3804 3664 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)3849 3677 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+( = C/2)3862 3664 MS
+(corresponds to the single point at the center of the receptive field. )496 3784 MS
+[92 0 0 -92 0 0]/Symbol MF
+(d)3192 3784 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)3237 3797 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+( varies linearly along any)3250 3784 MS
+(linear path from any point on a face of the receptive field to the point at the center.  Equation 5)496 3897 MS
+(can then be modified to give the new CMAC output:)496 4003 MS
+n
+1764 4406 M
+1815 4406 L
+CM 0.258 0.258 scale
+s
+SM
+n
+1967 4358 M
+2618 4358 L
+CM 0.258 0.258 scale
+s
+SM
+[91.559 0 0 -91.559 0 0]/Helvetica MF
+(y)1683 4389 MS
+(S)1761 4389 MS
+(f)2108 4246 MS
+(W)2374 4246 MS
+(A)2494 4246 MS
+(f)2287 4534 MS
+[66.586 0 0 -66.586 0 0]/Helvetica MF
+(i)2217 4269 MS
+(i)2563 4269 MS
+(i)1984 4342 MS
+(C)2000 4137 MS
+(i)2396 4557 MS
+(i)2145 4630 MS
+(C)2161 4425 MS
+[91.559 0 0 -91.559 0 0]/Helvetica MF
+(\()1728 4389 MS
+(\))1820 4389 MS
+(\()2138 4246 MS
+(\))2244 4246 MS
+(*)2305 4246 MS
+([)2464 4246 MS
+(])2590 4246 MS
+(\()2318 4534 MS
+(\))2424 4534 MS
+[91.559 0 0 -91.559 0 0]/Symbol MF
+(=)1880 4389 MS
+(\242)2561 4251 MS
+[66.586 0 0 -66.586 0 0]/Symbol MF
+(=)1999 4342 MS
+(=)2160 4630 MS
+[149.82 0 0 -149.82 0 0]/Symbol MF
+(\345)1975 4257 MS
+(\345)2136 4545 MS
+[91.559 0 0 -91.559 0 0]/Symbol MF
+(d)2168 4246 MS
+(d)2348 4534 MS
+[66.586 0 0 -66.586 0 0]/Helvetica MF
+(1)2034 4342 MS
+(1)2195 4630 MS
+[91.559 0 0 -91.559 0 0]/Helvetica MF
+( )2637 4389 MS ( )2663 4389 MS ( )2688 4389 MS ( )2714 4389 MS ( )2739 4389 MS ( )2765 4389 MS ( )2790 4389 MS ( )2816 4389 MS ( )2841 4389 MS ( )2867 4389 MS
+( )2892 4389 MS ( )2918 4389 MS ( )2944 4389 MS ( )2969 4389 MS ( )2995 4389 MS ( )3020 4389 MS (\()3046 4389 MS (1)3076 4389 MS (3)3127 4389 MS (\))3178 4389 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+(In equation 13, f\()496 4782 MS
+[92 0 0 -92 0 0]/Symbol MF
+(d)1190 4782 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)1235 4795 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+(\) represents the one-dimensional primitive which forms the basis of the)1248 4782 MS
+(receptive field )496 4902 MS
+(sensitivity function)1089 4902 MS
+(. In practice, f\()1834 4902 MS
+[92 0 0 -92 0 0]/Symbol MF
+(d)2421 4902 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)2466 4915 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+(\) = )2479 4902 MS
+[92 0 0 -92 0 0]/Symbol MF
+(d)2616 4902 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)2661 4915 MS
+[92 0 0 -92 0 0]/_Helvetica MF
+( is a simple and effective choice for the)2674 4902 MS
+n
+744 6 1089 4912 B
+f
+(sensitivity function, producing piece-wise planar approximations.)496 5015 MS
+(Finally, equation 6 which describes the weight adjustment during training must be replaced)646 5171 MS
+(by:)496 5277 MS
+n
+1881 5689 M
+1932 5689 L
+CM 0.258 0.258 scale
+s
+SM
+n
+2140 5689 M
+2192 5689 L
+CM 0.258 0.258 scale
+s
+SM
+n
+2609 5640 M
+3064 5640 L
+CM 0.258 0.258 scale
+s
+SM
+[91.613 0 0 -91.613 0 0]/Symbol MF
+(D)1237 5672 MS
+[91.613 0 0 -91.613 0 0]/Helvetica MF
+(W)1293 5672 MS
+(y)1734 5672 MS
+(d)1787 5711 MS
+(S)1878 5672 MS
+(y)2059 5672 MS
+(S)2138 5672 MS
+(f)2353 5672 MS
+(i)2466 5711 MS
+(f)2807 5523 MS
+(f)2783 5818 MS
+[66.625 0 0 -66.625 0 0]/Helvetica MF
+(i)1379 5697 MS
+(n)2922 5548 MS
+(n)2673 5625 MS
+(C)2700 5412 MS
+(n)2954 5843 MS
+(n)2648 5920 MS
+(C)2675 5708 MS
+[91.613 0 0 -91.613 0 0]/Symbol MF
+(=)1436 5672 MS
+(-)1985 5672 MS
+[66.625 0 0 -66.625 0 0]/Symbol MF
+(=)2710 5625 MS
+(=)2686 5920 MS
+[149.914 0 0 -149.914 0 0]/Symbol MF
+(\345)2674 5533 MS
+(\345)2650 5829 MS
+[91.613 0 28.313 -91.613 0 0]/Symbol MF
+(b)1528 5672 MS
+(d)2411 5672 MS
+(d)2866 5523 MS
+(d)2898 5818 MS
+[91.613 0 0 -91.613 0 0]/Helvetica MF
+(*)1634 5672 MS
+(\()1698 5672 MS
+(\()1844 5672 MS
+(\))1937 5672 MS
+(\()2104 5672 MS
+(\))2197 5672 MS (\))2227 5672 MS
+(*)2287 5672 MS
+(\()2384 5672 MS
+(\))2498 5672 MS
+(*)2558 5672 MS
+(\()2838 5523 MS
+(\))2973 5523 MS
+(\()2870 5818 MS
+(\))3005 5818 MS
+[66.625 0 0 -66.625 0 0]/Helvetica MF
+(1)2745 5625 MS
+(2)2822 5774 MS
+(1)2721 5920 MS
+[91.613 0 0 -91.613 0 0]/Helvetica MF
+( )2617 5818 MS
+( )3030 5818 MS
+( )3083 5672 MS ( )3108 5672 MS ( )3134 5672 MS ( )3160 5672 MS ( )3185 5672 MS ( )3211 5672 MS ( )3236 5672 MS ( )3262 5672 MS ( )3287 5672 MS ( )3313 5672 MS
+( )3338 5672 MS ( )3364 5672 MS ( )3389 5672 MS ( )3415 5672 MS ( )3440 5672 MS ( )3466 5672 MS (\()3491 5672 MS (1)3521 5672 MS (4)3572 5672 MS (\))3624 5672 MS
+showpage
+%%Page: 7 7
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(7)2495 6197 MS
+(Note that equation 6 described a weight adjustment )496 610 MS
+[92 0 0 -92 0 0]/Symbol MF
+(D)2621 610 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(W which was added equally to each of)2677 610 MS
+(the C adjustable weights representing the C excited receptive fields, while in equation 14 the)496 723 MS
+(weight adjustment )496 836 MS
+[92 0 0 -92 0 0]/Symbol MF
+(D)1264 836 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(W)1320 836 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)1411 874 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( for each receptive field is scaled by the magnitude of the receptive field)1424 836 MS
+(sensitivity function f\()496 974 MS
+[92 0 0 -92 0 0]/Symbol MF
+(d)1325 974 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)1370 987 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(\). If f\()1383 974 MS
+[92 0 0 -92 0 0]/Symbol MF
+(d)1603 974 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)1648 987 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(\)  = 1 for all )1661 974 MS
+[92 0 0 -92 0 0]/Symbol MF
+(d)2153 974 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)2198 987 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(, equations 13 and 14 reduce to equations 5 and 6.)2211 974 MS
+(It is obvious from comparing equations 5 and 6 to equations 13 and 14 that the)646 1137 MS
+(implementation of non-constant receptive field sensitivity functions requires an increase in)496 1243 MS
+(computational effort. Thus, in many cases the simpler case of f\()496 1356 MS
+[92 0 0 -92 0 0]/Symbol MF
+(d)3087 1356 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)3132 1369 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(\)  = 1 is preferable, even)3145 1356 MS
+(though it results in piece-wise constant CMAC outputs. When a continuous CMAC output is)496 1469 MS
+(important, we generally use f\()496 1582 MS
+[92 0 0 -92 0 0]/Symbol MF
+(d)1704 1582 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)1749 1595 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(\) = )1762 1582 MS
+[92 0 0 -92 0 0]/Symbol MF
+(d)1899 1582 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)1944 1595 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( , which results in piece-wise planar CMAC outputs. We)1957 1582 MS
+(have also experimented with cubic )496 1702 MS
+(spline and truncated )1924 1702 MS
+(gaussian functions for f\()2778 1702 MS
+[92 0 0 -92 0 0]/Symbol MF
+(d)3760 1702 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)3805 1715 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(\).)3818 1702 MS
+(Paradoxically, learning system performance is usually worse when using these higher order)496 1815 MS
+(sensitivity functions for input dimensions greater than two. We feel that this results from their)496 1921 MS
+(much smaller magnitude near the edges of the receptive field, which dominates the receptive)496 2027 MS
+(field volume in higher dimensional spaces. In applications we thus use either constant or linear)496 2133 MS
+(sensitivity functions. Note that when using non-constant sensitivity functions, the arrangement)496 2239 MS
+(of receptive fields is critical to good performance. In such cases, near uniform arrangements of)496 2345 MS
+(receptive fields always provide substantially better learning system performance [12] than the)496 2451 MS
+(diagonalized arrangement used by )496 2557 MS
+(Albus.)1932 2557 MS
+[92 0 0 -92 0 0]/Helvetica-Bold MF
+(Receptive Field Hashing Considerations)496 2766 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(As discussed previously, the total number of receptive fields required to span a )646 2923 MS
+(multi-)3880 2923 MS
+(dimensional space \(C times\) is often too large for practical implementation in terms of the)496 3029 MS
+(storage required for the adjustable weights of all possible receptive fields. On the other hand, it)496 3135 MS
+(is unlikely that the entire input state space of a large system would be visited in solving a)496 3241 MS
+(specific problem. Thus it is only necessary to store information for receptive fields that are)496 3347 MS
+(excited during training. Following this logic, most implementations of CMAC neural networks)496 3453 MS
+(include some form of pseudo-random hashing to transform the vector virtual address )496 3559 MS
+(A)3970 3559 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)4031 3572 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( of an)4044 3559 MS
+n
+60 6 3970 3569 B
+f
+(excited receptive field into a scalar address )496 3665 MS
+(A')2280 3665 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)2359 3678 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( of the corresponding weight storage.)2372 3665 MS
+(The major requirement of the hashing function is that the generated addresses )646 3821 MS
+(A')3878 3821 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)3957 3834 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( be)3970 3821 MS
+(uniformly distributed in the range M of the available physical memory addresses, even for small)496 3927 MS
+(changes in )496 4033 MS
+(A)967 4033 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)1028 4046 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(. In software implementations of CMAC, we have primarily used a simple hashing)1041 4033 MS
+n
+60 6 967 4043 B
+f
+(algorithm based on previously generated random number tables:)496 4139 MS
+[91.664 0 0 -91.664 0 0]/Symbol MF
+(\242)1679 4405 MS
+(=)1732 4401 MS
+(\346)1810 4298 MS
+(\350)1810 4495 MS
+(\347)1810 4394 MS
+(\347)1810 4430 MS
+(\366)2472 4298 MS
+(\370)2472 4495 MS
+(\367)2472 4394 MS
+(\367)2472 4430 MS
+[66.664 0 0 -66.664 0 0]/Symbol MF
+(=)1897 4497 MS
+[150 0 0 -150 0 0]/Symbol MF
+(\345)1870 4411 MS
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+(A)1612 4401 MS
+(T)2006 4401 MS
+(a)2115 4401 MS
+(R)2323 4401 MS
+(M)2635 4401 MS ( )2711 4401 MS ( )2737 4401 MS ( )2762 4401 MS ( )2788 4401 MS ( )2813 4401 MS ( )2839 4401 MS ( )2864 4401 MS ( )2890 4401 MS ( )2915 4401 MS
+[66.664 0 0 -66.664 0 0]/Helvetica MF
+(i)1681 4424 MS
+(j)2064 4424 MS
+(i)2170 4424 MS (j)2184 4424 MS
+(j)2398 4424 MS
+(j)1883 4497 MS
+(N)1895 4292 MS
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+([)2088 4401 MS
+(%)2220 4401 MS
+(])2425 4401 MS
+(%)2532 4401 MS
+[66.664 0 0 -66.664 0 0]/Helvetica MF
+(1)1933 4497 MS
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+( )2941 4401 MS ( )2966 4401 MS ( )2992 4401 MS ( )3017 4401 MS ( )3043 4401 MS ( )3068 4401 MS ( )3094 4401 MS (\()3119 4401 MS (1)3149 4401 MS (5)3201 4401 MS
+(\))3252 4401 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(where each )496 4670 MS
+(T)996 4670 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)1053 4683 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( represents a table of uniformly distributed random values with )1066 4670 MS
+(R)3624 4670 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)3690 4683 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( total table)3703 4670 MS
+(entries. Here, )496 4776 MS
+(R)1075 4776 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)1141 4789 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( effectively limits the dynamic range of the )1154 4776 MS
+(jth component of the normalized)2891 4776 MS
+(input vector, due to wrap-around of the table index. This hashing algorithm is numerically)496 4882 MS
+(efficient and produces a good approximation to uniformly distributed addresses in the range 0)496 4988 MS
+(to M-1, as long as the dynamic range of the pseudo-random numbers in the tables is at least M.)496 5094 MS
+(Note that a single bit change in any component of )496 5200 MS
+(A)2545 5200 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)2606 5213 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( can cause a large change in )2619 5200 MS
+(A')3823 5200 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)3902 5213 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(, as)3915 5200 MS
+n
+60 6 2545 5210 B
+f
+(desired. In our experience, the quality of the hashing produced is sensitive to the quality of the)496 5306 MS
+(uniform random number generator used to fill the )496 5412 MS
+(T)2522 5412 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)2579 5425 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( tables, but is not sensitive to the specific)2592 5412 MS
+(seed selected when using a good random number generator.)496 5518 MS
+(Hashing collisions are defined by:)646 5674 MS
+1 j
+1 setlinecap
+16 sl
+n
+2347 5844 M
+2407 5844 L
+CM 0.258 0.258 scale
+s
+SM
+n
+2619 5844 M
+2680 5844 L
+CM 0.258 0.258 scale
+s
+SM
+[91.664 0 0 -91.664 0 0]/Symbol MF
+(\242)1638 5832 MS
+(=)1739 5827 MS
+(\242)1911 5832 MS
+(\271)2514 5827 MS
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+(A)1571 5827 MS
+(A)1844 5827 MS
+(A)2347 5827 MS
+(A)2619 5827 MS
+[66.664 0 0 -66.664 0 0]/Helvetica MF
+(n)1640 5850 MS
+(m)1912 5850 MS
+(n)2415 5860 MS
+(m)2688 5860 MS
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+( )1977 5827 MS ( )2002 5827 MS ( )2028 5827 MS ( )2053 5827 MS ( )2079 5827 MS (f)2104 5827 MS (o)2131 5827 MS (r)2182 5827 MS ( )2212 5827 MS ( )2237 5827 MS
+( )2263 5827 MS ( )2289 5827 MS ( )2314 5827 MS
+( )2752 5827 MS ( )2778 5827 MS ( )2803 5827 MS ( )2829 5827 MS ( )2854 5827 MS ( )2880 5827 MS ( )2905 5827 MS ( )2931 5827 MS ( )2956 5827 MS ( )2982 5827 MS
+( )3008 5827 MS ( )3033 5827 MS ( )3059 5827 MS ( )3084 5827 MS ( )3110 5827 MS ( )3135 5827 MS (\()3161 5827 MS (1)3191 5827 MS (6)3242 5827 MS (\))3293 5827 MS
+showpage
+%%Page: 8 8
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(8)2495 6197 MS
+(This has the effect of introducing learning interference, in the sense that training adjustments to)496 603 MS
+(two distinct and possibly distant receptive fields affect the same adjustable weights. In many)496 709 MS
+(implementations of CMAC \(including that described originally by )496 815 MS
+(Albus\), hashing collisions are)3121 815 MS
+(ignored. This is often reasonable since the CMAC outputs are averages over several receptive)496 921 MS
+(fields \(there is no specific desired response for any single receptive field\), and since the goal is)496 1027 MS
+(often to approximate a target function rather than to reproduce it exactly. In essence, CMAC)496 1133 MS
+(training involves satisfying coupled equations using the available adjustable weights. Hashing)496 1239 MS
+(collisions increase the coupling between equations \(possibly slowing training convergence\), but)496 1345 MS
+(do not necessarily preclude finding a satisfactory solution. Of course, if hashing collisions are)496 1451 MS
+(too frequent, the coupled set of training equations can become greatly )496 1557 MS
+(overdetermined, with no)3378 1557 MS
+(satisfactory solutions.)496 1663 MS
+(The probability of no hashing collisions when training a single example of novel data is)646 1819 MS
+(approximately:)496 1925 MS
+1 j
+1 setlinecap
+16 sl
+n
+2386 2164 M
+2517 2164 L
+CM 0.258 0.258 scale
+s
+SM
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+(P)1646 2195 MS
+(M)2386 2125 MS
+(M)2413 2258 MS
+(C)2582 2077 MS
+[66.664 0 0 -66.664 0 0]/Helvetica MF
+(u)2463 2148 MS
+(n)1700 2218 MS (o)1737 2218 MS ( )1774 2218 MS (c)1793 2218 MS (o)1826 2218 MS (l)1864 2218 MS (l)1878 2218 MS (i)1893 2218 MS (s)1907 2218 MS (i)1941 2218 MS
+(o)1955 2218 MS (n)1992 2218 MS (s)2030 2218 MS
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+( )2665 2195 MS ( )2690 2195 MS ( )2716 2195 MS ( )2741 2195 MS ( )2767 2195 MS ( )2792 2195 MS ( )2818 2195 MS ( )2843 2195 MS ( )2869 2195 MS ( )2894 2195 MS
+( )2920 2195 MS ( )2945 2195 MS ( )2971 2195 MS ( )2996 2195 MS ( )3022 2195 MS ( )3047 2195 MS (\()3073 2195 MS (1)3103 2195 MS (7)3154 2195 MS (\))3205 2195 MS
+[91.664 0 0 -91.664 0 0]/Symbol MF
+(=)2127 2195 MS
+(-)2313 2195 MS
+(\346)2204 2122 MS
+(\350)2204 2259 MS
+(\347)2204 2195 MS
+(\366)2543 2122 MS
+(\370)2543 2259 MS
+(\367)2543 2195 MS
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+(1)2256 2195 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(where )496 2431 MS
+(M)771 2431 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(u)846 2444 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( / M represents the fraction of the available weight storage that has been affected by)878 2431 MS
+(previous training. It is obvious that for reasonable values of the generalization parameter C, the)496 2537 MS
+(probability of collision-free training is low unless the utilization of available storage is very low.)496 2643 MS
+(Thus, collision-ignorant hashing is best suited to applications which provide opportunity for)496 2749 MS
+(repetitive training in order to resolve the additional coupling due to hashing collisions during)496 2855 MS
+(training. This could involve repetitive off-line training for a pattern recognition application using a)496 2961 MS
+(fixed training set, or could involve continuous on-line training \(and thus retraining\) in a control)496 3067 MS
+(application. The advantage to collision ignorant hashing in applications involving on-line training)496 3173 MS
+(is that old-information, which is not reinforced in subsequent training and which may no longer)496 3279 MS
+(be useful, will eventually be completely overwritten and will not tie up storage resources.)496 3385 MS
+(Complete saturation of the storage capacity will never occur, in the sense that new information)496 3491 MS
+(can always be learned \(although possibly at the expense of previously trained information\).)496 3597 MS
+(Collision-free hashing generally involves storing some unique identifier of the virtual)646 3753 MS
+(receptive field \(such as its virtual address )496 3859 MS
+(A)2204 3859 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)2265 3872 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(\) along with each adjustable weight or weight)2278 3859 MS
+n
+60 6 2204 3869 B
+f
+(vector, so that collisions can be detected and thus avoided. While hashing collisions may be)496 3965 MS
+(eliminated, storing unique identifiers can result in a substantial increase in the amount of)496 4071 MS
+(storage per receptive field, offsetting the reduction in storage which was the original motivation)496 4177 MS
+(for hashing. Collision-resistant hashing can provide a compromise by storing a pseudo-random)496 4283 MS
+(hash tag, derived from the receptive field virtual address )496 4389 MS
+(A)2810 4389 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)2871 4402 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(, along with each adjustable weight)2884 4389 MS
+n
+60 6 2810 4399 B
+f
+(or weight vector. Collisions can then be detected and avoided reliably \(but not certainly\) by)496 4495 MS
+(comparing the stored hash tag with the value derived from the new address. If the tags do not)496 4601 MS
+(match, the CMAC weight memory is searched sequentially until either a tag match or an)496 4707 MS
+(unallocated location \(blank tag\) is found.)496 4813 MS
+(In our implementation of collision-resistant hashing, we generate the hash tag using the)646 4969 MS
+(same pseudo-random generator used for address mapping \(equation 15\), but with different)496 5075 MS
+(random tables, and with a different constant k in the final modulus \(M in equation 15\).)496 5181 MS
+(Assuming that all detected collisions can be avoided, the probability of no hashing collisions)496 5287 MS
+(when training a single example of novel data is then approximately:)496 5393 MS
+n
+2292 5632 M
+2349 5632 L
+CM 0.258 0.258 scale
+s
+SM
+n
+2452 5632 M
+2583 5632 L
+CM 0.258 0.258 scale
+s
+SM
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+(P)1527 5663 MS
+(k)2295 5726 MS
+(M)2452 5593 MS
+(M)2479 5726 MS
+[66.664 0 0 -66.664 0 0]/Helvetica MF
+(u)2529 5616 MS
+(n)1581 5686 MS (o)1618 5686 MS ( )1655 5686 MS (c)1674 5686 MS (o)1707 5686 MS (l)1744 5686 MS (l)1759 5686 MS (i)1774 5686 MS (s)1788 5686 MS (i)1821 5686 MS
+(o)1836 5686 MS (n)1873 5686 MS (s)1910 5686 MS
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+(C)2629 5545 MS
+( )2712 5663 MS ( )2737 5663 MS ( )2763 5663 MS ( )2788 5663 MS ( )2814 5663 MS ( )2839 5663 MS ( )2865 5663 MS ( )2890 5663 MS ( )2916 5663 MS ( )2941 5663 MS
+( )2967 5663 MS ( )2992 5663 MS ( )3018 5663 MS ( )3043 5663 MS ( )3069 5663 MS ( )3094 5663 MS (\()3120 5663 MS (1)3150 5663 MS (8)3201 5663 MS (\))3252 5663 MS
+[91.664 0 0 -91.664 0 0]/Symbol MF
+(=)2008 5663 MS
+(-)2206 5663 MS
+(\346)2085 5590 MS
+(\350)2085 5727 MS
+(\347)2085 5663 MS
+(\366)2591 5590 MS
+(\370)2591 5727 MS
+(\367)2591 5663 MS
+[91.664 0 0 -91.664 0 0]/Helvetica MF
+(1)2137 5663 MS
+(1)2299 5596 MS
+(*)2383 5663 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(where k represents the dynamic range of the hash tag. In contrast to the collision-ignorant)496 5899 MS
+(hashing \(equation 17\), the probability of collision-free training is high even if the utilization of)496 6005 MS
+showpage
+%%Page: 9 9
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(9)2495 6197 MS
+(available storage is high, assuming a reasonably large value of k. Thus, collision-resistant)496 603 MS
+(hashing provides essentially the same performance as collision-free hashing, typically with)496 709 MS
+(substantially less storage per receptive field. Collision-resistant hashing is best suited to)496 815 MS
+(applications which require long-term retention of previously trained information in the presence)496 921 MS
+(of subsequent training of novel data, without reinforcement of previously trained examples \(no)496 1027 MS
+(learning interference\). This could involve pattern recognition applications where it may be)496 1133 MS
+(desirable to train new examples of certain classes as they are encountered, or control)496 1239 MS
+(applications which require sequential skill learning. The disadvantage to collision-resistant)496 1345 MS
+(hashing in applications involving on-line training is that old-information, which may no longer be)496 1451 MS
+(useful, will tie up storage resources indefinitely. This can lead to complete saturation of the)496 1557 MS
+(storage capacity.)496 1663 MS
+[92 0 0 -92 0 0]/Helvetica-Bold MF
+(Weight Magnitude Normalization)496 1872 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(The output of the CMAC neural network for any input is an average over C adjustable)646 2029 MS
+(weights. During training, individual weights are adjusted in order to reduce the error in the)496 2135 MS
+(average. However, there are an infinite number \(or in practice, a very large number\) of)496 2241 MS
+(combinations of weight values which will produce the same average. As a result, training)496 2347 MS
+(provides only indirect control of weight magnitude.)496 2453 MS
+(This can be a problem during applications which require continuous on-line training. After)646 2609 MS
+(the neural network training converges to a low error, residual error and sensor noise can cause)496 2715 MS
+(continual small adjustments to the weights. These residual adjustments may average to zero)496 2821 MS
+(over time for the CMAC output and yet not average to zero over time for individual weights.)496 2927 MS
+(Some weights may drift towards large positive values while others drift towards large negative)496 3033 MS
+(values, while maintaining good output  performance in terms of averages over C weights.)496 3139 MS
+(These unnecessarily large weights can eventually cause problems, however, in terms of)496 3245 MS
+(increased error from hashing collisions and weight saturation for weight implementations with)496 3351 MS
+(limited dynamic range.)496 3457 MS
+(The problem can be fixed by placing a penalty on large weight magnitudes during training)646 3613 MS
+(\(similar to the weight decay concept used as part of training for some other neural networks\).)496 3719 MS
+(Since the CMAC output is an average over multiple weights, an appropriate magnitude)496 3825 MS
+(regularization is to penalize individual weights for varying from the average. The weight)496 3931 MS
+(adjustment equation \(equation 6\) is then replaced by)496 4037 MS
+1 j
+1 setlinecap
+16 sl
+n
+1817 4206 M
+1869 4206 L
+CM 0.258 0.258 scale
+s
+SM
+n
+2102 4206 M
+2153 4206 L
+CM 0.258 0.258 scale
+s
+SM
+n
+2710 4206 M
+2762 4206 L
+CM 0.258 0.258 scale
+s
+SM
+[91.141 0 0 -91.141 0 0]/Symbol MF
+(D)1145 4190 MS
+[91.141 0 0 -91.141 0 0]/Helvetica MF
+(W)1201 4190 MS
+(y)1681 4190 MS
+(S)1814 4190 MS
+(y)2020 4190 MS
+(S)2099 4190 MS
+(y)2629 4190 MS
+(S)2707 4190 MS
+(W)2913 4190 MS
+(A)3035 4190 MS
+[66.285 0 0 -66.285 0 0]/Helvetica MF
+(i)1287 4215 MS
+(d)1735 4215 MS
+(i)3103 4215 MS
+[91.141 0 0 -91.141 0 0]/Symbol MF
+(=)1344 4190 MS
+(-)1934 4190 MS
+(+)2279 4190 MS
+(-)2827 4190 MS
+(\242)3102 4191 MS
+[91.141 0 28.168 -91.141 0 0]/Symbol MF
+(b)1436 4190 MS
+(b)2389 4190 MS
+[66.285 0 0 -66.285 0 0]/Helvetica MF
+(1)1498 4215 MS
+(2)2456 4215 MS
+[91.141 0 0 -91.141 0 0]/Helvetica MF
+(*)1571 4190 MS
+(\()1634 4190 MS
+(\()1781 4190 MS
+(\))1874 4190 MS
+(\()2065 4190 MS
+(\))2158 4190 MS
+(\))2200 4190 MS
+(*)2518 4190 MS
+(\()2581 4190 MS
+(\()2674 4190 MS
+(\))2767 4190 MS
+([)3004 4190 MS
+(])3131 4190 MS
+(\))3167 4190 MS
+( )3201 4190 MS ( )3226 4190 MS ( )3252 4190 MS ( )3277 4190 MS ( )3303 4190 MS ( )3328 4190 MS ( )3354 4190 MS ( )3380 4190 MS ( )3405 4190 MS ( )3431 4190 MS
+( )3456 4190 MS ( )3482 4190 MS ( )3507 4190 MS ( )3533 4190 MS ( )3558 4190 MS (\()3584 4190 MS (1)3614 4190 MS (9)3665 4190 MS (\))3716 4190 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(where separate training gains are used to individually emphasize the importance of the)496 4359 MS
+(supervised learning versus the weight magnitude normalization. We generally select )496 4472 MS
+[92 0 0 -92 0 0]/Symbol MF
+(b)3944 4472 MS
+[46 0 0 -46 0 0]/Symbol MF
+(2)3995 4497 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( to be at)4018 4472 MS
+(most equal to )496 4592 MS
+[92 0 0 -92 0 0]/Symbol MF
+(b)1076 4592 MS
+[46 0 0 -46 0 0]/Symbol MF
+(1)1127 4617 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( / 4, since good output performance is generally the most important. Note that)1150 4592 MS
+(equation 6 described a single weight adjustment )496 4712 MS
+[92 0 0 -92 0 0]/Symbol MF
+(D)2487 4712 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(W which was added equally to the C)2543 4712 MS
+(adjustable weights representing the C excited receptive fields, while in equation 19 the weight)496 4825 MS
+(adjustment )496 4938 MS
+[92 0 0 -92 0 0]/Symbol MF
+(D)973 4938 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(W)1029 4938 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)1120 4976 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( is different for each weight. A similar modification can be added to equation 14)1133 4938 MS
+(for training when using non-constant receptive field sensitivity functions.)496 5069 MS
+[92 0 0 -92 0 0]/Helvetica-Bold MF
+(Variable Input )496 5278 MS
+(Quantization)1131 5278 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(One limitation of the CMAC algorithms described in the previous sections is that)646 5435 MS
+(quantization and generalization are fixed in the input space by the constants )496 5548 MS
+[92 0 0 -92 0 0]/Symbol MF
+(D)3615 5548 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)3671 5561 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( and C \()3684 5548 MS
+[92 0 0 -92 0 0]/Symbol MF
+(D)4012 5548 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)4068 5561 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( is the)4081 5548 MS
+(quantization interval and C * )496 5668 MS
+[92 0 0 -92 0 0]/Symbol MF
+(D)1671 5668 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)1727 5681 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( is the generalization width for input component j\). In some)1740 5668 MS
+(problems, it may be desirable to have fine )496 5781 MS
+(quantization and narrow generalization in some)2225 5781 MS
+(regions of the input space, with coarse )496 5887 MS
+(quantization and broad generalization in other regions. If)2094 5887 MS
+(these regions can be identified in advance, the )496 6000 MS
+(s)2420 6000 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)2466 6013 MS
+( )2479 6013 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(/)2495 6000 MS
+[92 0 0 -92 0 0]/Symbol MF
+(D)2521 6000 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)2577 6013 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( terms in equations 2 and 11 can be)2590 6000 MS
+showpage
+%%Page: 10 10
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(10)2470 6197 MS
+(replaced by a more general )496 603 MS
+(w)1642 603 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)1707 616 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(\()1720 603 MS
+(s)1751 603 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)1797 616 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(\), where each )1810 603 MS
+(w)2393 603 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)2458 616 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(\(\) is a fixed nonlinear warping function specific)2471 603 MS
+(to each input.)496 709 MS
+(If appropriate regional variations in )646 865 MS
+(quantization and generalization can not be determined in)2084 865 MS
+(advance, it may be possible to represent input warping functions using models with adaptable)496 971 MS
+(parameters, and to adapt the warping functions during neural network training. Our laboratory)496 1077 MS
+(and others have done preliminary experiments on adaptive input space warping, but no detailed)496 1183 MS
+(information has yet been published. At least two general approaches have been proposed. In)496 1289 MS
+(one approach, warping functions at the CMAC inputs are adapted in order to directly reduce the)496 1395 MS
+(CMAC output error \(using )496 1501 MS
+(backpropagation of the error through the CMAC element\). In a)1570 1501 MS
+(second approach, warping functions at the CMAC inputs are adapted in order to reduce the)496 1607 MS
+(gradient of the estimated variance of the CMAC output error.)496 1713 MS
+(An alternative approach to this problem was reported by Moody [19]. He proposed using a)646 1869 MS
+(multi-resolution CMAC in which the receptive fields in each layer were of different size. The)496 1975 MS
+(layer with the largest receptive fields was trained first, followed by the layer with the next largest)496 2081 MS
+(receptive fields, and so forth. In this way, broad generalization could be achieved where)496 2187 MS
+(appropriate by the initial training of the large receptive fields, and fine details could be learned)496 2293 MS
+(during the later training of the small receptive fields. Better learning system performance can be)496 2399 MS
+(obtained by using complete )496 2505 MS
+(CMACs in parallel, each with a different resolution [13], rather than)1641 2505 MS
+(single layers of different size receptive fields as proposed by Moody. The drawback to the )496 2611 MS
+(multi-)4164 2611 MS
+(resolution approach \(relative to input space warping\)  is that the smallest receptive fields are)496 2717 MS
+(placed everywhere in the space, even though there may only be a limited region that actually)496 2823 MS
+(requires fine )496 2929 MS
+(quantization. Thus, the memory utilization is unnecessarily high.)1030 2929 MS
+[92 0 0 -92 0 0]/Helvetica-Bold MF
+(THE UNH_CMAC CODE)496 3188 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(Copyright c 1989, 1990, 1994, 1995, 1996 The University of New Hampshire.)1096 3392 MS
+(All rights reserved.)1096 3487 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(The file)646 3641 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+( )949 3641 MS
+(unh_cmac.c )975 3641 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(is a C language implementation of a multiple CMAC driver. Prototypes)1497 3641 MS
+(and constants are defined in )496 3747 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(unh_cmac.h)1679 3747 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(. The code includes multiple \(and programmable\))2180 3747 MS
+(designs for the receptive field lattice and the receptive field sensitivity functions. It was)496 3853 MS
+(developed in the Robotics Laboratory of the  Department of Electrical and Computer)496 3959 MS
+(Engineering at the University of New Hampshire. This C source code is not available for sale)496 4065 MS
+(from UNH, and can not be resold. You may use it, and give it away freely to others, as long as)496 4171 MS
+(you, and those you give it to, agree to acknowledge the UNH Robotics Laboratory in any project)496 4277 MS
+(reports, manuscripts, software manuals, etc., which result from projects which utilize this code.)496 4383 MS
+(The code is generic C, but has been tested most thoroughly at UNH using C compilers for)646 4539 MS
+(Microsoft Windows and Microsoft Windows-NT. The algorithms assume that the )496 4645 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(int)3773 4645 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( data type)3870 4645 MS
+(refers to signed integers with 16 or more bits, and that the)496 4751 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+( long )2855 4751 MS
+(int)3080 4751 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( data type refers to signed)3177 4751 MS
+(integers with 32 or more bits. There is no coupling between these restrictions \()496 4857 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(int)3685 4857 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( and )3782 4857 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(long )3987 4857 MS
+(int)4186 4857 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(can both be 32 bits, for example\). The code makes extensive use of )496 4963 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(long )3288 4963 MS
+(int)3487 4963 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( math, so it runs)3584 4963 MS
+(most efficiently on computer-compiler combinations with direct hardware support for)496 5069 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+( \(long)3904 5069 MS
+(int\)+\(long )496 5175 MS
+(int\))908 5175 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(,)1036 5175 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+( \(long )1062 5175 MS
+(int\)*\(long )1318 5175 MS
+(int\))1712 5175 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( and )1840 5175 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(\(long )2045 5175 MS
+(int\)/\(long )2275 5175 MS
+(int\))2659 5175 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(.)2787 5175 MS
+(You should check the following functions for compatibility with your compiler:)646 5331 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(malloc\(\) - allocate data region of size specified in bytes.)1096 5534 MS
+(free\(\)   - )1096 5629 MS
+(deallocate data region.)1416 5629 MS
+(rand\(\)   - return random integer in range 0 - 32767.)1096 5724 MS
+showpage
+%%Page: 11 11
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(11)2470 6197 MS
+[92 0 0 -92 0 0]/Helvetica-Bold MF
+(Global Parameters)496 606 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(The code contains several global parameters which must be set at compile time since they)646 763 MS
+(determine the size of static storage elements. Most often, the default values shown below are)496 869 MS
+(reasonable and need not be changed.)496 975 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(/* Set this to the )1096 1228 MS
+(maximum)1703 1228 MS
+( number of independent )2068 1228 MS
+(CMACs you will need */)2968 1228 MS
+n
+364 5 1703 1237 B
+f
+(#define NUM_CMACS 8)1096 1323 MS
+(/* Set this to the )1096 1513 MS
+(maximum)1703 1513 MS
+( number of input dimensions you will need in any CMAC */)2068 1513 MS
+n
+364 5 1703 1522 B
+f
+(#define MAX_STATE_SIZE 64)1096 1608 MS
+(/* Set this to the )1096 1798 MS
+(maximum)1703 1798 MS
+( number of output dimensions you will need */)2068 1798 MS
+n
+364 5 1703 1807 B
+f
+(#define MAX_RESPONSE_SIZE 8)1096 1893 MS
+(/* Set this to the )1096 2083 MS
+(maximum)1703 2083 MS
+( number of layers of receptive fields you will need */)2068 2083 MS
+n
+364 5 1703 2092 B
+f
+(#define MAX_GEN_SIZE 256)1096 2178 MS
+(/* Set this to the size of the receptive field function look-up table you will use */)1096 2368 MS
+(#define RF_TABLE_SIZE 128)1096 2463 MS
+[92 0 0 -92 0 0]/Helvetica-Bold MF
+(Primary CMAC Procedures)496 2670 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(int )1096 2924 MS
+(allocate_cmac\()1206 2924 MS
+(int )1766 2924 MS
+(num_state,int *)1876 2924 MS
+(qnt_state,int )2430 2924 MS
+(num_resp,)2904 2924 MS
+(       )1096 3019 MS
+(int )1257 3019 MS
+(num_cell,int )1367 3019 MS
+(memory,int )1833 3019 MS
+(field_shape, )2267 3019 MS
+(int )2737 3019 MS
+(collide_flag\))2847 3019 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(This procedure is used to allocate a new CMAC with the specifications given in the)646 3173 MS
+(parameters. The first parameter is the number of dimensions N to the CMAC input vectors. The)496 3279 MS
+(second parameter is a pointer to a vector of dimension N which defines the )496 3385 MS
+(quantization)3572 3385 MS
+(parameters \()496 3498 MS
+[92 0 0 -92 0 0]/Symbol MF
+(D)1019 3498 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(j)1075 3511 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( in equations 2 and 11\). The third parameter is the dimension of the CMAC)1088 3498 MS
+(output vectors. The fourth parameter is the generalization parameter C \(the number of)496 3611 MS
+(overlapping layers of receptive fields\). In the version 2.1 code, this value must be equal to an)496 3717 MS
+(integer power of 2 \(1, 2, 4, 8, 16, ...\). If not, the code will operate incorrectly. The fifth)496 3823 MS
+(parameter is the total size M of the CMAC vector memory \(the total number of weights is)496 3929 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(memory*num_resp)496 4035 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(\). The sixth parameter sets the design of the CMAC receptive fields, using)1274 4035 MS
+(predefined constants. )496 4141 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(ALBUS)1403 4141 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( creates a conventional )1703 4141 MS
+(Albus CMAC: on-off receptive fields in a)2674 4141 MS
+(hyperdiagonal arrangement. )496 4247 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(RECTANGULAR)1673 4247 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( creates on-off receptive fields in a uniform)2365 4247 MS
+(arrangement. )496 4353 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(LINEAR)1071 4353 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( creates linearly-tapered receptive field sensitivity functions in a uniform)1402 4353 MS
+(arrangement. )496 4459 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(SPLINE)1071 4459 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( creates )1397 4459 MS
+(gaussian-like \(cubic-)1751 4459 MS
+(spline approximation\) tapered receptive field)2590 4459 MS
+(sensitivity functions in a uniform arrangement. )496 4565 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(CUSTOM)2396 4565 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(  creates a CMAC with user defined)2793 4565 MS
+(receptive field sensitivity function and arrangement \(set using subsequent calls to)496 4671 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(set_cmac_rf_magnitude\(\))496 4777 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( and )1540 4777 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(set_cmac_rf_displacement\(\))1745 4777 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(\). The last parameter is set TRUE or)2901 4777 MS
+(FALSE \(not 0 or 0\) to indicate whether or not to allow hashing collisions \(TRUE allows)496 4883 MS
+(collisions\).)496 4989 MS
+(The procedure returns an integer value which is greater than 0 if successful. This value is)646 5145 MS
+(called the CMAC handle and is used to identify the specific CMAC in subsequent calls to other)496 5251 MS
+(procedures. If the returned handle is 0, an error occurred during allocation.)496 5357 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(int )1096 5610 MS
+(deallocate_cmac\()1206 5610 MS
+(int )1858 5610 MS
+(cmac_id\))1968 5610 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(This procedure frees all storage associated with the specified CMAC, and makes the handle)646 5764 MS
+(invalid. The procedure returns TRUE if successful and FALSE if not.)496 5870 MS
+showpage
+%%Page: 12 12
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(12)2470 6197 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(int )1096 594 MS
+(train_cmac\()1206 594 MS
+(int )1642 594 MS
+(cmac_id,int *)1752 594 MS
+(state,int *)2228 594 MS
+(respns,int beta1,int beta2\))2573 594 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(This procedure is used to train a previously allocated CMAC. The first parameter is the)646 748 MS
+(CMAC handle. The second parameter is a pointer to the vector containing the CMAC training)496 854 MS
+(input. The third parameter is a pointer to a vector containing the target \(desired\) response. The)496 960 MS
+(last two parameters set the two training gains of equation 19. However, the training gain)496 1066 MS
+(parameters in the procedure call are right shift factors \()496 1179 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(beta1)2738 1179 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( = 1 means )2968 1179 MS
+[92 0 0 -92 0 0]/Symbol MF
+(b)3453 1179 MS
+[46 0 0 -46 0 0]/Symbol MF
+(1)3504 1204 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( = 0.5, )3527 1179 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(beta1)3813 1179 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( = 2)4043 1179 MS
+(means )496 1299 MS
+[92 0 0 -92 0 0]/Symbol MF
+(b)798 1299 MS
+[46 0 0 -46 0 0]/Symbol MF
+(1)849 1324 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( = 0.25, etc.\). The procedure returns TRUE if successful and FALSE if not.)872 1299 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(int )1096 1559 MS
+(adjust_cmac\()1206 1559 MS
+(int )1703 1559 MS
+(cmac_id,int *)1813 1559 MS
+(state,int *)2289 1559 MS
+(drespns,int beta1\))2634 1559 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(This procedure is similar to )646 1713 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(train_cmac\(\))1772 1713 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( except that the third parameter is a pointer to a)2284 1713 MS
+(vector containing the training error signal, rather than the desired response. In other words,)496 1819 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(train_cmac\(\))496 1925 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( is used to train the CMAC by supplying a particular desired response, while)1008 1925 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(adjust_cmac\(\))496 2031 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( is used to train the CMAC by supplying how you would like the current response)1074 2031 MS
+(to change. The procedure returns TRUE if successful and FALSE if not.)496 2137 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(int )1096 2390 MS
+(cmac_response\()1206 2390 MS
+(int )1823 2390 MS
+(cmac_id,int *)1933 2390 MS
+(state,int *)2409 2390 MS
+(respns\))2754 2390 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(This procedure returns the CMAC vector response to the input vector specified. The first)646 2544 MS
+(parameter is the CMAC handle. The second parameter is a pointer to the vector containing the)496 2650 MS
+(CMAC input. The third parameter is a pointer to a vector to receive the CMAC response. The)496 2756 MS
+(procedure returns TRUE if successful and FALSE if not.)496 2862 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(int )1096 3115 MS
+(clear_cmac_weights\()1206 3115 MS
+(int )1987 3115 MS
+(cmac_id\))2097 3115 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(This procedure sets the weights of the specified CMAC to 0. All subsequent CMAC)646 3269 MS
+(responses will be 0 until further training occurs. The procedure returns TRUE if successful and)496 3375 MS
+(FALSE if not.)496 3481 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(int )1096 3734 MS
+(cmac_memory_usage\()1206 3734 MS
+(int )2054 3734 MS
+(cmac_id\))2164 3734 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(This procedure returns the number of CMAC weight vectors which have been modified by)646 3888 MS
+(training since the last call to )496 3994 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(clear_cmac_weights\(\))1653 3994 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(.)2548 3994 MS
+[92 0 0 -92 0 0]/Helvetica-Bold MF
+(CMAC Support Procedures)496 4203 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(int )1096 4457 MS
+(save_cmac\()1206 4457 MS
+(int )1656 4457 MS
+(cmac_id,char *filename\))1766 4457 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(This procedure stores all information about the state of a CMAC in a file. It is most useful for)646 4611 MS
+(storing previously trained information. The first parameter is the CMAC handle. The second)496 4717 MS
+(parameter is a pointer to a file name string. The procedure returns TRUE if successful and)496 4823 MS
+(FALSE if not.)496 4929 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(int )1096 5182 MS
+(restore_cmac\(char *filename\))1206 5182 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(This procedure restores a CMAC from a file created by a prior call to )646 5336 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(save_cmac\(\))3457 5336 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(. It is)3984 5336 MS
+(most useful for restoring previously trained information. The single parameter is a pointer to a)496 5442 MS
+(file name string. The procedure returns the handle to a newly allocated CMAC if successful,)496 5548 MS
+(otherwise it returns 0.)496 5654 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(int )1096 5907 MS
+(get_cmac\()1206 5907 MS
+(int )1596 5907 MS
+(cmac_id,int )1706 5907 MS
+(index,int *)2150 5907 MS
+(buffer,int count\))2513 5907 MS
+showpage
+%%Page: 13 13
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(13)2470 6197 MS
+(This procedure returns raw CMAC weight vectors from the physical memory. It is useful for)646 603 MS
+(saving trained information or gathering statistics about weight magnitudes, for example. Each)496 709 MS
+(weight vector is of size )496 815 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(num_resp)1447 815 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( + 1 and includes one integer weight for each component of)1856 815 MS
+(the output vector, plus one extra integer value used in address hashing. The first parameter is)496 921 MS
+(the CMAC handle. The second parameter is an index \(0 to M-1\) into the physical weight vector)496 1027 MS
+(memory \(an A' address\). The third parameter is a pointer to a vector of size )496 1133 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(count*\()3588 1133 MS
+(num_resp +)3880 1133 MS
+(1\))496 1239 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( which receives the CMAC weights. The fourth parameter is the count of contiguous weight)578 1239 MS
+(vectors to transfer. The procedure returns the number of weight vectors actually transferred.)496 1345 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(int )1096 1598 MS
+(put_cmac\()1206 1598 MS
+(int )1596 1598 MS
+(cmac_id,int )1706 1598 MS
+(index,int *)2150 1598 MS
+(buffer,int count\))2513 1598 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(This procedure stores raw CMAC weight vectors in the physical memory. It is useful for)646 1752 MS
+(restoring previously trained information or directly modifying/corrupting weights, for example.)496 1858 MS
+(Each weight vector is of size )496 1964 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(num_resp)1682 1964 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( + 1 and includes one integer weight for each)2091 1964 MS
+(component of the output vector, plus one extra integer value used in address hashing. The)496 2070 MS
+(trailing hashing value should never be modified by application code \(the correct way to)496 2176 MS
+(overwrite a weight vector is to use )496 2282 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(get_cmac\(\))1906 2282 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( to get the weights and hashing value, then)2367 2282 MS
+(change the weights, and finally use )496 2388 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(put_cmac\(\))1954 2388 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( to write the new weights with the original)2415 2388 MS
+(hashing value\). The first parameter is the CMAC handle. The second parameter is an index \(0)496 2494 MS
+(to M-1\) into the physical weight vector memory \(an A' address\). The third parameter is a pointer)496 2600 MS
+(to a vector of size )496 2706 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(count*\()1244 2706 MS
+(num_resp + 1\))1536 2706 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( which contains the CMAC weights. The fourth)2133 2706 MS
+(parameter is the count of contiguous weight vectors to transfer. The procedure returns the)496 2812 MS
+(number of weight vectors actually transferred.)496 2918 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(int )1096 3171 MS
+(set_cmac_rf_displacement\()1206 3171 MS
+(int )2226 3171 MS
+(cmac_id,int *buffer\))2336 3171 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(This procedure sets the receptive field mapping displacement vector \()646 3325 MS
+(D)3481 3325 MS
+( in equation 7\) for)3547 3325 MS
+n
+65 6 3481 3335 B
+f
+(use by a )496 3431 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(CUSTOM)869 3431 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( CMAC. The first parameter is the CMAC handle. The second parameter is a)1266 3431 MS
+(pointer to a vector of size N which contains the displacement vector. The procedure returns)496 3537 MS
+(TRUE if successful and FALSE if not.)496 3643 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(int )1096 3896 MS
+(set_cmac_rf_magnitude\()1206 3896 MS
+(int )2124 3896 MS
+(cmac_id,int *buffer\))2234 3896 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(This procedure sets the receptive field sensitivity function look-up table for use by a)646 4050 MS
+[92 0 0 -92 0 0]/Helvetica-Oblique MF
+(CUSTOM)496 4156 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( CMAC. The first parameter is the CMAC handle. The second parameter is a pointer)893 4156 MS
+(to a vector of size RF_TABLE_SIZE which contains the table. The procedure returns TRUE if)496 4262 MS
+(successful and FALSE if not.)496 4368 MS
+[83 0 0 -83 0 0]/Helvetica MF
+(int )1096 4621 MS
+(map_cmac_input\()1206 4621 MS
+(int )1869 4621 MS
+(cmac_id,int *)1979 4621 MS
+(state,int *weights[], )2455 4621 MS
+(int *)3172 4621 MS
+(rfmags\))3314 4621 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(This procedure returns internal CMAC mapping information. The first parameter is the)646 4775 MS
+(CMAC handle. The second parameter is a pointer to the vector containing the CMAC input. The)496 4881 MS
+(third parameter is a pointer to a vector of size C which in turn receives pointers to the weight)496 4987 MS
+(vectors mapped to by the input vector \(the )496 5093 MS
+(A')2241 5093 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)2320 5106 MS
+[92 0 0 -92 0 0]/Helvetica MF
+( in the equations of the previous sections\). The)2333 5093 MS
+(fourth parameter is also a pointer to a vector of size C which receives the magnitudes of the)496 5199 MS
+(receptive field sensitivity functions for the mapped receptive fields \(the f\()496 5312 MS
+[92 0 0 -92 0 0]/Symbol MF
+(d)3435 5312 MS
+[58 0 0 -58 0 0]/Helvetica MF
+(i)3480 5325 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(\) in equations 13 and)3493 5312 MS
+(14\). The procedure returns TRUE if successful and FALSE if not.)496 5425 MS
+[92 0 0 -92 0 0]/Helvetica-Bold MF
+(AN OUTLINE OF APPLICATIONS AND THEORY LITERATURE)496 5684 MS
+[92 0 0 -92 0 0]/Helvetica MF
+(Over the years there have been a large number of attempts to use CMAC for real)646 5841 MS
+(applications, in simulated applications, and in demonstration projects.  Below is a listing of as)496 5947 MS
+showpage
+%%Page: 14 14
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(14)2470 6197 MS
+(many of those applications as we have found.  There are others that we know of but have been)496 603 MS
+(unable to obtain, and there have undoubtedly been some oversights \(our apologies!\).  These)496 709 MS
+(are organized by application with a listing of the numbers from the papers in the Bibliography at)496 815 MS
+(the end of the chapter.   Headings for theory papers and hardware papers are also included.)496 921 MS
+(Control \(including robotics\))496 1077 MS
+(Kinematics [10, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40])796 1233 MS
+(Dynamics [30, 33, 34, 36, 41, 42, 43, 44, 45])796 1389 MS
+(Unstable plant [34])796 1545 MS
+(Time delay in plant  [46])796 1701 MS
+(Adaptive )796 1857 MS
+(critic [47, 48, 49, 50])1178 1857 MS
+(Walking \(biped and quadruped\) [35, 36, 38, 43, 44, 51])796 2013 MS
+(Dynamic programming [52])796 2169 MS
+(Chemical systems [9, 53, 54, 55, 56, 57])796 2325 MS
+(Optimal [52, 58, 59])796 2481 MS
+(Mobile [60])796 2637 MS
+(Manipulator/robot [5, 10, 30, 31, 32, 33, 45, 61, 62, 63, 64, 65, 66])796 2793 MS
+(Fuzzy [27, 28, 67, 68, 69])796 2949 MS
+(Manufacturing/CIM/tool fault [39, 70, 71, 72])496 3105 MS
+(Pattern recognition)496 3261 MS
+(Nearest neighbor methods [73])796 3417 MS
+(Character recognition [23, 74])796 3573 MS
+(Handwriting recognition [74])796 3729 MS
+(Signal processing [23, 75, 76, 77])496 3885 MS
+(Biomedical [2, 68, 77, 78, 79, 80, 81])496 4041 MS
+(Others)496 4197 MS
+(Physics detectors [82])796 4353 MS
+(Geophysical [83, 84, 85])796 4509 MS
+(Ultrasonics [86])796 4665 MS
+(Color correction [87])796 4821 MS
+(Theory [12, 14, 15, 16, 25, 27, 28, 29, 57, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100])496 4977 MS
+(Hardware implementation [87, 101, 102, 103])496 5133 MS
+showpage
+%%Page: 15 15
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(15)2470 6197 MS
+[92 0 0 -92 0 0]/Helvetica-Bold MF
+(BIBLIOGRAPHY)496 756 MS
+[83 0 0 -83 0 0]/Times-Roman MF
+(\(Created August, 1994.\))496 953 MS
+([1] F. )496 1149 MS
+(Rosenblatt, )703 1149 MS
+(Principles of )1100 1149 MS
+(neurodynamics)1544 1149 MS
+(. New York, NY: Spartan, 1962.)2048 1149 MS
+n
+947 3 1100 1158 B
+f
+([2] J. S. )496 1247 MS
+(Albus,"Theoretical and experimental aspects of a )778 1247 MS
+(cerebellar model," )2435 1247 MS
+(PhD. Dissertation, University of)3069 1247 MS
+(Maryland, 1972.)736 1345 MS
+([3] B. )496 1443 MS
+/IsChar{exch/CharStrings get exch known}bd/MapCh{3 -1 roll/Encoding get 3 1
+roll put}bd/MapDegree{dup 16#b0 exch/degree IsChar{/degree}{/ring}ifelse MapCh}
+bd/MapBB{dup 16#a6 exch/brokenbar IsChar{/brokenbar}{/bar}ifelse MapCh}bd
+/reencode{findfont begin currentdict dup length dict begin{1 index/FID ne{def}
+{pop pop}ifelse}forall/FontName exch def dup length 0 ne{/Encoding Encoding 256
+array copy def 0 exch{dup type/nametype eq{Encoding 2 index 2 index put pop 1
+add}{exch pop}ifelse}forall}if pop currentdict dup end end/FontName get exch
+definefont dup MapDegree MapBB}bd/LATENC[0/grave/acute/circumflex/tilde/macron
+/breve/dotaccent/dieresis/ring/cedilla/hungarumlaut/ogonek/caron/dotlessi/fi/fl
+/Lslash/lslash/Zcaron/zcaron/minus/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/space/exclam/quotedbl
+/numbersign/dollar/percent/ampersand/quotesingle/parenleft/parenright/asterisk
+/plus/comma/hyphen/period/slash/zero/one/two/three/four/five/six/seven/eight
+/nine/colon/semicolon/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M
+/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright/asciicircum
+/underscore/grave/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft
+/bar/braceright/asciitilde/.notdef/.notdef/.notdef/quotesinglbase/florin
+/quotedblbase/ellipsis/dagger/daggerdbl/circumflex/perthousand/Scaron
+/guilsinglleft/OE/.notdef/.notdef/.notdef/.notdef/quoteleft/quoteright
+/quotedblleft/quotedblright/bullet/endash/emdash/tilde/trademark/scaron
+/guilsinglright/oe/.notdef/.notdef/Ydieresis/.notdef/exclamdown/cent/sterling
+/currency/yen/brokenbar/section/dieresis/copyright/ordfeminine/guillemotleft
+/logicalnot/hyphen/registered/macron/degree/plusminus/twosuperior/threesuperior
+/acute/mu/paragraph/periodcentered/cedilla/onesuperior/ordmasculine
+/guillemotright/onequarter/onehalf/threequarters/questiondown/Agrave/Aacute
+/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla/Egrave/Eacute/Ecircumflex
+/Edieresis/Igrave/Iacute/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute
+/Ocircumflex/Otilde/Odieresis/multiply/Oslash/Ugrave/Uacute/Ucircumflex
+/Udieresis/Yacute/Thorn/germandbls/agrave/aacute/acircumflex/atilde/adieresis
+/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave/iacute
+/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex/otilde/odieresis
+/divide/oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn/ydieresis]def
+LATENC /_Times-Roman /Times-Roman reencode
+[83 0 0 -83 0 0]/_Times-Roman MF
+(Widrow,\224 Generalization and information storage in networks of )713 1443 MS
+(adaline 'neurons',\224 )2885 1443 MS
+(Self-Organizing Systems)3515 1443 MS
+(,)4341 1443 MS
+n
+825 3 3515 1452 B
+f
+(Ed. M. C. )736 1541 MS
+(Yovits, Washington, DC: Spartan, 1962. pp. 435-461.)1084 1541 MS
+([4] J. S. )496 1639 MS
+(Albus, "Data storage in the )778 1639 MS
+(cerebellar model articulation controller," J. Dynamic Systems,'' Measurement)1698 1639 MS
+(and Control, pp. 228-233, 1975.)736 1737 MS
+([5] J. S. )496 1835 MS
+(Albus, "A  new  approach  to  manipulator  control:   the )778 1835 MS
+(cerebellar  model  articulation  controller)2672 1835 MS
+(\(CMAC\)," Trans. ASME, pp.  220-227, 1975.)736 1933 MS
+([6] J. S. )496 2031 MS
+(Albus, "Mechanisms of planning and problem solving  in  the brain," Mathematical )778 2031 MS
+(Biosciences, Vol. 45,)3566 2031 MS
+(pp. pp. 247-293, 1979.)736 2129 MS
+([7] J. S. )496 2227 MS
+(Albus, )778 2227 MS
+(Brains, behavior, and robotics)1017 2227 MS
+(. )2019 2227 MS
+(Peterborough, )2061 2227 MS
+(N.H.: Byte Books/)2552 2227 MS
+(McGraw-Hill, 1981.)3171 2227 MS
+n
+1001 3 1017 2236 B
+f
+([8] E. )496 2325 MS
+(Ersu, "A learning Mechanism for an Associative Storage System," IEEE )708 2325 MS
+(Intl'l Conference on Cybernetics and)3134 2325 MS
+(Society, Atlanta, GA, pp. 26-28, 1981.)736 2423 MS
+([9] H. )496 2521 MS
+(Tolle and E. )717 2521 MS
+(Ersu, )1149 2521 MS
+(Neurocontrol)1343 2521 MS
+(. Berlin )1787 2521 MS
+(Heidelberg: )2058 2521 MS
+(Springer-Verlag, 1992.)2472 2521 MS
+n
+443 3 1343 2530 B
+f
+([10] W. T. Miller, "A Nonlinear Learning  Controller  for  )496 2619 MS
+(Robotic Manipulators," )2453 2619 MS
+(Proc. of the SPIE : Intelligent)3258 2619 MS
+(Robots and Computer Vision, Vol. 726, pp. 416-423, 1986.)736 2717 MS
+([11] W. T. Miller, F. H. )496 2815 MS
+(Glanz, and L. G. Kraft, "CMAC: an associative neural network alternative to)1312 2815 MS
+(backpropagation," IEEE Proceedings, Vol. 78, pp. 1561-1567, 1990.)736 2913 MS
+([12] W. T. Miller, E. An, F. H. )496 3011 MS
+(Glanz, and M. J. Carter, "The design of CMAC neural networks for control,")1547 3011 MS
+(Adaptive and Learning Systems, New Haven, CT, Vol. 1, pp. 140-145, 1990.)736 3109 MS
+([13] P.-C. E. )496 3207 MS
+(An,"An improved )942 3207 MS
+(multi-dimensional CMAC neural network: receptive field function and placement,")1558 3207 MS
+(PhD Dissertation, University of New Hampshire, 1991.)736 3305 MS
+([14] P.-C. E. An, W. T. Miller, and P. C. Parks, "Design Improvements in Associative Memories for CMAC,")496 3403 MS
+(ICANN '91, )736 3501 MS
+(Helsinke, Fin., Vol. 2, pp. 1207-1210, 1991.)1159 3501 MS
+([15] P. C. Parks and J. )496 3599 MS
+(Militzer, "Improved allocation of weights for associative memory storage in learning control)1265 3599 MS
+(systems," IFAC Design Methods of Control Systems, Zurich, Switzerland, pp. 507-512, 1991.)736 3697 MS
+([16] S. H. Lane, D. A. )496 3795 MS
+(Handelman, and J. J. )1257 3795 MS
+(Gelfand, "The theory and development of higher-order CMAC neural)1971 3795 MS
+(networks," IEEE Control Systems Magazine, pp. 23-30, April, 1992.)736 3893 MS
+([17] T. )496 3991 MS
+(Poggio and F. )751 3991 MS
+(Girosi, A theory for approximation and learning, MIT AI Lab, )1237 3991 MS
+(Rept. no. No. 1140, July, 1989.)3330 3991 MS
+([18] J. Moody and C. Darken, "Learning with localized receptive fields," )496 4089 MS
+(Connectionists Models Summer School,)2946 4089 MS
+(pp. 1988.)736 4187 MS
+([19] J. Moody and C. J. Darken, "Fast learning in networks of locally-tuned processing units," Neural Computation,)496 4285 MS
+(Vol. 1, pp. 281-294, 1989.)736 4383 MS
+([20] A. V. )496 4481 MS
+(Oppenheim and R. W. )860 4481 MS
+(Schaferr, )1626 4481 MS
+(Discrete-Time Signal Processing)1949 4481 MS
+(. Englewood Cliffs, )3041 4481 MS
+(N.J.: )3710 4481 MS
+(Prentice Hall,)3889 4481 MS
+n
+1091 3 1949 4490 B
+f
+(1989.)736 4579 MS
+([21] D. Peterson and D. )496 4677 MS
+(Middleton, "Sampling and reconstruction of wave-number limited functions in N-)1310 4677 MS
+(dimensional Euclidean spaces," Information and Control, Vol. 5, pp. 279-323, 1962.)736 4775 MS
+([22] D. E. Dudgeon and R. M. )496 4873 MS
+(Mersereau, )1531 4873 MS
+(Multidimensional Digital Signal Processing)1924 4873 MS
+(. )3376 4873 MS
+(Prentice-Hall, Inc., 1984.)3418 4873 MS
+n
+1451 3 1924 4882 B
+f
+([23] F. H. )496 4971 MS
+(Glanz, W. T. Miller, and L. G. Kraft, "An overview of the CMAC neural network," IEEE Conference on)847 4971 MS
+(Neural Networks for Ocean Engineering, Washington, DC, pp. 301-308, 1991.)736 5069 MS
+([24] F. H. )496 5167 MS
+(Glanz and J. Yang, "Experimental parameter studies for the CMAC neural network," IJCNN-91, Seattle,)847 5167 MS
+(WA, pp. 1991.)736 5265 MS
+([25] F. H. )496 5363 MS
+(Glanz, "CMAC mechanism and behavior," Submitted to IEEE Transactions on Neural Networks, 1994.)847 5363 MS
+([26] X. J. )496 5461 MS
+(Yang,"Experimental parameter studies for the CMAC neural network," MS Thesis, University of New)834 5461 MS
+(Hampshire, 1993.)736 5559 MS
+([27] M. Brown and C. Harris, )496 5657 MS
+(Neurofuzzy Adaptive )1507 5657 MS
+(Modelling and Control)2243 5657 MS
+(. )3005 5657 MS
+(Hemel Hempstead, UK: )3047 5657 MS
+(Prentice Hall,)3867 5657 MS
+n
+1497 3 1507 5666 B
+f
+(1994.)736 5755 MS
+([28] M. )496 5853 MS
+(Brown,"Neurofuzzy adaptive )773 5853 MS
+(modelling and control," )1768 5853 MS
+(PhD. Dissertation, )2578 5853 MS
+(Southhampton University, 1993.)3211 5853 MS
+showpage
+%%Page: 16 16
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(16)2470 6197 MS
+[83 0 0 -83 0 0]/Times-Roman MF
+([29] M. Brown, C. J. Harris, and P. C. Parks, "The interpolation capabilities of the binary CMAC," Neural)496 595 MS
+(Networks, Vol. 6, pp. pp.429-440, 1993.)736 693 MS
+([30] W. T. Miller, R. P. )496 791 MS
+(Hewes, F. H. )1308 791 MS
+(Glanz, and L. G. Kraft, "Real-time dynamic control of an industrial)1764 791 MS
+(manipulator using a neural-network-based learning controller," IEEE Trans. Robotics  )736 889 MS
+(Automat., Vol. 6, pp.)3621 889 MS
+(1-9, 1990.)736 987 MS
+([31] W. T. Miller, "A learning controller for )496 1085 MS
+(nonrepetitive  )1992 1085 MS
+(robotic operations,"  )2472 1085 MS
+(Proc.  of the Workshop on Space)3175 1085 MS
+(Telerobotics, Pasadena,  CA, Vol.  II, pp. 273-281, 1987.)736 1183 MS
+([32] W. T. Miller, "Sensor Based Control  of  )496 1281 MS
+(Robotic  Manipulators Using  A  General Learning Algorithm," IEEE)2036 1281 MS
+(Trans.  Robotics )736 1379 MS
+(Automat., Vol. RA-3, pp. 157-165, 1987.)1306 1379 MS
+([33] W. T. Miller, F. H. )496 1477 MS
+(Glanz, and L. G. Kraft, "Application of  a general   learning   algorithm   to  the   control   of)1312 1477 MS
+(robotic manipulators.," )736 1575 MS
+(Internat. J. Robotics Research, Vol. 6, pp. 84-98, 1987.)1524 1575 MS
+([34] W. T. Miller and C. M. )496 1673 MS
+(Aldrich, "Rapid learning using CMAC neural networks: real time control of an unstable)1455 1673 MS
+(system," 5th. Symposium on Intelligent Control, Philadelphia, PA, pp. 465-470, 1990.)736 1771 MS
+([35] W. T. Miller III, "Real-time neural network control of a biped walking robot," IEEE Transactions on Automatic)496 1869 MS
+(Control, 1993.)736 1967 MS
+([36] W. T. Miller III, "Real-time control of a biped walking robot," World Conference on Neural Networks,)496 2065 MS
+(Portland, OR, pp. 1993.)736 2163 MS
+([37] H. )496 2261 MS
+(Werntges, "Delta rule-based neural networks for inverse kinematics," 1990 International Joint Conference on)759 2261 MS
+(Neural Networks, San Diego, CA, Vol. 3, pp. 415-420, 1990.)736 2359 MS
+([38] Y. )496 2457 MS
+(Lin and S.-M. Song, ")759 2457 MS
+(Kinematic control and coordination of walking machine motion using neural)1492 2457 MS
+(networks," 1991 IEEE International Joint Conference on Neural Networks - IJCNN '91, Singapore,)736 2555 MS
+(Singapore, pp. 248-253, 1991.)736 2653 MS
+([39] Z. )496 2751 MS
+(Geng and L. S. )749 2751 MS
+(Haynes, "Neural network solution for the forward kinematics problem of a )1270 2751 MS
+(stewart platform,")3767 2751 MS
+(Robotics and Computer-Integrated Manufacturing, Vol. 9, pp. 485-495, 1992.)736 2849 MS
+([40] Z. )496 2947 MS
+(Geng and L. )749 2947 MS
+(Haynes, "Neural network solution for the forward kinematics problem of a )1182 2947 MS
+(Stewart platform,")3679 2947 MS
+(1991 IEEE International Conference on Robotics and Automation, Sacramento, CA, Vol. 3, pp. 2650-2655,)736 3045 MS
+(1991.)736 3143 MS
+([41] R. P. )496 3241 MS
+(Hewes and W. T. Miller, "Practical Demonstration of a Learning  Control  System  for a  Five  Axis)843 3241 MS
+(Industrial  Robot," )736 3339 MS
+(Proc.  of the SPIE:  Intelligent Robots and Computer Vision- Seventh in a Series,)1377 3339 MS
+(Cambridge, MA, Vol. 1002, pp. 679-685, 1989.)736 3437 MS
+([42] W. T. Miller and R. P. )496 3535 MS
+(Hewes, "Real time experiments in neural network based learning control during high)1428 3535 MS
+(speed )736 3633 MS
+(nonrepetitive )947 3633 MS
+(robotic operations," Proceedings of the Third IEEE International Symposium on)1406 3633 MS
+(Intelligent Control, Arlington, VA, pp. 513-518, 1988.)736 3731 MS
+([43] W. T. Miller, P. J. )496 3829 MS
+(Latham, and S. M. )1286 3829 MS
+(Scalera, "Bipedal gait )1924 3829 MS
+(adaption for walking with dynamic balance,")2672 3829 MS
+(American Control Conference, Boston, MA, pp. 1990.)736 3927 MS
+([44] W. T. Miller III, "Learning dynamic balance of a biped walking robot," IEEE International Conference on)496 4025 MS
+(Neural Networks, Orlando, Florida, Vol. 5, pp. 2771-2776, 1994.)736 4123 MS
+([45] A. )496 4221 MS
+(Eskandarian, N. E. )758 4221 MS
+(Bedewi, B. )1405 4221 MS
+(Kramer, and A. J. )1798 4221 MS
+(Barbera, "Dynamics modeling of )2410 4221 MS
+(robotic manipulators)3529 4221 MS
+(using an artificial neural network," Journal of )736 4319 MS
+(Robotic Systems, Vol. 11, pp. 41-56, 1994.)2267 4319 MS
+([46] A. V. )496 4417 MS
+(Sebald and J. )860 4417 MS
+(Schlenzig, ")1324 4417 MS
+(Minimax design of neural net controllers for highly uncertain plants," IEEE)1727 4417 MS
+(Transactions on Neural Networks, Vol. 5, pp. 73-82, 1994.)736 4515 MS
+([47] C.-S. )496 4613 MS
+(Lin and H. Kim, "Selection of learning parameters for CMAC-based adaptive critic learning,")848 4613 MS
+(International Conference on Artificial Neural Networks in Engineering, pp. 153-160, 1992.)736 4711 MS
+([48] C.-S. )496 4809 MS
+(Lin and H. Kim, "CMAC-based adaptive critic self-learning control," IEEE Transaction on Neural)848 4809 MS
+(Networks, Vol. 2, pp. 530-533, 1991.)736 4907 MS
+([49] R. O. )496 5005 MS
+(Shelton and J. K. Peterson, "Controlling a truck with an adaptive critic temporal difference CMAC)856 5005 MS
+(design," 3rd. Workshop on Neural Networks: Academic/Industrial/NASA/Defense, Auburn, AL, SPIE Vol.)736 5103 MS
+(1721, pp. 195-206, 1993.)736 5201 MS
+([50] R. O. )496 5299 MS
+(Shelton and J. K. Peterson, "Controlling a truck with an adaptive critic CMAC design," Simulation, Vol.)856 5299 MS
+(58, pp. 319-326, 1992.)736 5397 MS
+([51] W. T. Miller, P. J. )496 5495 MS
+(Latham, and S. M. )1286 5495 MS
+(Scalera, "Bipedal gait )1924 5495 MS
+(adaption for walking with dynamic balance,")2672 5495 MS
+(American Control Conference, Boston, MA, pp. 1991.)736 5593 MS
+([52] J. K. Peterson and R. O. )496 5691 MS
+(Shelton, "Use of CMAC neural architectures in obstacle avoidance," 3rd. Workshop on)1482 5691 MS
+(Neural Networks: Academic/Industrial/NASA/Defense, Alabama, AL, Vol. 1721, pp. 187-194, 1993.)736 5789 MS
+([53] E. )496 5887 MS
+(Ersu and X. Mao, "Control of pH  using  a  self-organizing control concept with associative memories," Int.)750 5887 MS
+(IASTED )736 5985 MS
+(Conf.  on Applied Control and Identification, Copenhagen, Denmark, pp. 1983.)1053 5985 MS
+showpage
+%%Page: 17 17
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(17)2470 6197 MS
+[83 0 0 -83 0 0]/Times-Roman MF
+([54] E. )496 595 MS
+(Ersu and J. )750 595 MS
+(Militzer, "Real-time implementation of an associative  memory-based learning control scheme for)1139 595 MS
+(non-linear multivariable processes," 1st Measurements and Control  Symposium on  Applications of)736 693 MS
+(Multivariable Systems  Techniques, Plymouth, UK, pp. 109-119, 1984.)736 791 MS
+([55] E. )496 889 MS
+(Ersu eds., )750 889 MS
+(On the application of associative neural network models to  technical control problems)1097 889 MS
+(, )3979 889 MS
+(Springer)4021 889 MS
+n
+2881 3 1097 898 B
+f
+(Verlag, 1984, pp. 90-93.)736 987 MS
+([56] S. )496 1085 MS
+(Gehlen and J. )745 1085 MS
+(Kreuzig, "Learning by interpolating memories for )1221 1085 MS
+(modelling of fermentation processes,")2896 1085 MS
+(Advanced Control of Chemical '91, Toulouse, France, pp. 273-278, 1991.)736 1183 MS
+([57] L. )496 1281 MS
+(Xu, J.-P. )749 1281 MS
+(Jiang, and J. )1062 1281 MS
+(Zhu, "Supervised learning control of a nonlinear polymerization reactor using the)1495 1281 MS
+(CMAC neural network for knowledge storage," IEE )736 1379 MS
+(Proceedings:Control Theory and Application, Vol. 141,)2488 1379 MS
+(pp. 33-38, 1994.)736 1477 MS
+([58] J. K. Peterson, "On-line estimation of optimal control sequences," International Conference on Artificial Neural)496 1575 MS
+(Networks in Engineering, pp. 579-584, 1992.)736 1673 MS
+([59] R. )496 1771 MS
+(Carlson, C. Lee, and K. )754 1771 MS
+(Rothermel, "Real time neural control of an active structure," International)1560 1771 MS
+(Conference on Artificial Neural Networks in Engineering, pp. 623-628, 1992.)736 1869 MS
+([60] T. )496 1967 MS
+(Fukuda, F. )751 1967 MS
+(Saito, and F. )1129 1967 MS
+(Arai, "Study on the )1571 1967 MS
+(brachiation type of mobile robot \(Heuristic creation of driving)2234 1967 MS
+(input and control using CMAC\)," 12th. International Conference on Soil Mechanics and Foundation)736 2065 MS
+(Engineering, Rio de Janeiro, Br., Vol. 2, pp. 478-483, 1989.)736 2163 MS
+([61] W. T. Miller III, L. G. Kraft, and F. H. )496 2261 MS
+(Glanz, "Real time comparison of neural network and traditional adaptive)1969 2261 MS
+(controllers," The Yale Conference on Adaptive Control, May 20-22,1992, Yale University, New Haven, CT,)736 2359 MS
+(pp. 99-104.)736 2457 MS
+([62] H. )496 2555 MS
+(Kano and K. )759 2555 MS
+(Takayama, "Learning control of )1203 2555 MS
+(robotic manipulators based on neurological model CMAC,")2290 2555 MS
+(11th. Triennial World Congress of the International Federation of Automatic Control, Tallinn, USSR, Vol. 5,)736 2653 MS
+(pp. 249-254, 1991.)736 2751 MS
+([63] Y. )496 2849 MS
+(Jin, T. Pipe, and A. Winfield, "Stable neural network control for manipulators," International Joint)759 2849 MS
+(Conference on Neural Networks, Nagoya, )736 2947 MS
+(Jpn, Vol. 3, pp. 2775-2778, 1993.)2152 2947 MS
+([64] Z. )496 3045 MS
+(Geng and L. S. )749 3045 MS
+(Haynes, "Dynamic control of a parallel link manipulator using a CMAC neural network,")1270 3045 MS
+(Computers & Electrical Engineering, Vol. 19, pp. 265-276, 1993.)736 3143 MS
+([65] Z. )496 3241 MS
+(Geng and L. S. )749 3241 MS
+(Haynes, "Dynamic control of a parallel link manipulator using CMAC neural network," IEEE)1270 3241 MS
+(International Symposium on Intelligent Control, Arlington, VA, pp. 411-416, 1991.)736 3339 MS
+([66] T.-Y. )496 3437 MS
+(Kuc and K. )859 3437 MS
+(Nam, "CMAC based iterative learning control of robot manipulators," 28th. IEEE Conference)1261 3437 MS
+(on Decision and Control, Tampa, FL, Vol. 3, pp. 2613-2618, 1989.)736 3535 MS
+([67] G. )496 3633 MS
+(Calcev, "Self-tuning )759 3633 MS
+(neurofuzzy controller," IEEE International Symposium on Intelligent Control, Chicago,)1457 3633 MS
+(IL, pp. 577-580, 1993.)736 3731 MS
+([68] J. )496 3829 MS
+(Nie and D. A. )732 3829 MS
+(Linkens, ")1217 3829 MS
+(Fuzzified CMAC self-learning controller," Second IEEE International Conference on)1559 3829 MS
+(Fuzzy Systems, San Francisco, CA, pp. 500-505, 1993.)736 3927 MS
+([69] J. )496 4025 MS
+(Ozawa, I. )732 4025 MS
+(Hayashi, and N. )1073 4025 MS
+(Wakami, "Formulation of CMAC-fuzzy system," IEEE international Conference)1628 4025 MS
+(on Fuzzy Systems - Fuzz-IEEE, San Diego, CA, pp. 1179-1186, 1992.)736 4123 MS
+([70] H. Park and H. S. )496 4221 MS
+(Cho, "CMAC-based learning controller for pressure tracking control of )1264 4221 MS
+(hydroforming)3652 4221 MS
+(processes," Winter Annual Meeting of the American Society of Mechanical Engineers, Dallas, TX, pp. 101-)736 4319 MS
+(106, 1990.)736 4417 MS
+([71] J. Lee and B. M. )496 4515 MS
+(Kramer, "Analysis of machine degradation using a neural network )1232 4515 MS
+(baded pattern)3450 4515 MS
+(discrimination model," Journal of Manufacturing Systems, Vol. 12, pp. 379-387, 1993.)736 4613 MS
+([72] J. Lee and B. )496 4711 MS
+(Kramer, "On-line fault monitoring and detection using an integrated learning and reasoning)1116 4711 MS
+(approach," Japan-USA Symposium on Flexible Automation, San Francisco, CA, Vol. 1, pp. 235-242, 1992.)736 4809 MS
+([73] N. )496 4907 MS
+(Ramesh and I. K. )759 4907 MS
+(Sethi, "Nearest neighbor classification using CMAC," IEEE international Conference on)1358 4907 MS
+(Neural Networks, Orlando, Florida, Vol. 5, pp. 3061-3066, 1994.)736 5005 MS
+([74] W. T. Miller III, K. F. )496 5103 MS
+(Arehart, S. M. )1417 5103 MS
+(Scalera, and H. L. Gresham, "On-line hand-printed character recognition)1916 5103 MS
+(using CMAC neural networks," World Conference on Neural Networks, Portland, OR, July 12-15, 1993, pp.)736 5201 MS
+(IV10-IV13.)736 5299 MS
+([75] F. H. )496 5397 MS
+(Glanz and W. T. Miller, ")847 5397 MS
+(Deconvolution using a CMAC neural  network," )1707 5397 MS
+(Proc.  of  the First  Annual)3338 5397 MS
+(Meeting  of  the International Neural Network Society, Boston, MA, pp. 440, 1988.)736 5495 MS
+([76] F. H. )496 5593 MS
+(Glanz and W. T. Miller, ")847 5593 MS
+(Deconvolution and nonlinear inverse filtering using a neural network,")1707 5593 MS
+(International Conference on Acoustics and Signal Processing, Glasgow, Scotland, Vol. 4, pp. 2349-2352,)736 5691 MS
+(1989.)736 5789 MS
+([77] E. Wilson and J. )496 5887 MS
+(LaCourse, "Analyzing biological signals with CMAC, a neural network," 1991 IEEE 17th,)1227 5887 MS
+(Annual Northeast Bioengineering Conference, Hartford, CT, pp. 3-4, 1991.)736 5985 MS
+showpage
+%%Page: 18 18
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(18)2470 6197 MS
+[83 0 0 -83 0 0]/Times-Roman MF
+([78] S. )496 595 MS
+(Gehlen, M. Hormel, and S. )745 595 MS
+(Bohrer, "A learning control scheme with neuron-like associative memories for the)1666 595 MS
+(control of biotechnological processes," neural networks, )736 693 MS
+(Nimes, France, pp. 1988.)2626 693 MS
+([79] D. )496 791 MS
+(Bergantz and H. )759 791 MS
+(Barad, "Neural network control of cybernetic limb prostheses," Annual International)1323 791 MS
+(Conference of the IEEE Engineering in Medicine and Biology Society, New Orleans, LA, Vol. 3, pp. 1486-)736 889 MS
+(1487, 1988.)736 987 MS
+([80] A. V. )496 1085 MS
+(Sebald, C. A. )860 1085 MS
+(Sebald, and J. )1327 1085 MS
+(Schlenzig, "Use of neural net control strategies in difficult adaptive control)1812 1085 MS
+(problems closed loop control of drug infusion," 23rd. Annual )736 1183 MS
+(Asilomar Conference on Signals, Systems and)2796 1183 MS
+(Computers, Pacific Grove, CA, Vol. 1, pp. 342-345, 1989.)736 1281 MS
+([81] D. J. )496 1379 MS
+(Wasser, D. W. )834 1379 MS
+(Hislop, and R. N. Johnson, "Evaluation of a neural network for fault-tolerant, real-time,)1344 1379 MS
+(adaptive control," Images of the Twenty-first Century -11 Annual International Conference of the IEEE)736 1477 MS
+(Engineering in Medicine and Biology, Seattle, WA, pp. 2027-2028, 1989.)736 1575 MS
+([82] G. )496 1673 MS
+(Simpson and K. )759 1673 MS
+(Reinhard, A new approach to event location, UNH - GRO-)1312 1673 MS
+(Comptel Group, )3269 1673 MS
+(Rept. no. COM-)3830 1673 MS
+(TN-UNH-F70-044, June 9, 1988.)736 1771 MS
+([83] A. )496 1869 MS
+(Hagens and J. H. )758 1869 MS
+(Doveton, "Application of a simple )1345 1869 MS
+(cerebellar model to geologic surface mapping,")2510 1869 MS
+(Computers & )736 1967 MS
+(Geosciences, Vol. 17, pp. 561-567, 1991.)1205 1967 MS
+([84] G. )496 2065 MS
+(Simpson and K. )759 2065 MS
+(Li, Artificial neural networks: solutions to problems in remote sensing, Earth Observation)1312 2065 MS
+(Sciences, )736 2163 MS
+(Ltd  \(EOS\), )1068 2163 MS
+(Rept. no. EOS-92/00\(16000\)-RP-001, March 1993.)1480 2163 MS
+([85] D. )496 2261 MS
+(Verrall and G. )759 2261 MS
+(Simpson, Neural networks for )1259 2261 MS
+(meteosat cloud classification, Earth Observation Sciences, Ltd.)2278 2261 MS
+(\(EOS\), )736 2359 MS
+(Rept. no. EOS-92/078-RP-001, Oct. 1992.)991 2359 MS
+([86] )496 2457 MS
+(Daarla and )657 2457 MS
+(Zhao, "A learning algorithm for a CMAC-based system and its application to classification of)1041 2457 MS
+(ultrasonic signals," )736 2555 MS
+(Ultrasonics, Vol. 32, pp. 91-98, 1994.)1390 2555 MS
+([87] R.-C. Wen, et al., "A CMAC neural network chip for color correction," IEEE International Conference on)496 2653 MS
+(Neural Networks, Orlando, Florida, Vol. 3, pp. 1943-1948, 1994.)736 2751 MS
+([88] J. S. )496 2849 MS
+(Albus, "A theory of )820 2849 MS
+(cerebellar functions," Mathematical  )1496 2849 MS
+(Biosciences, Vol. 10, pp. 25-61, 1971.)2727 2849 MS
+([89] E. )496 2947 MS
+(Ersu and H. )750 2947 MS
+(Tolle, "A new  concept  for  learning  control inspired  by  brain theory," FAC  9th  World)1166 2947 MS
+(Congress,, Budapest, Hungary, pp. 1984.)736 3045 MS
+([90] E. )496 3143 MS
+(Ersu and H. )750 3143 MS
+(Tolle, "Hierarchical Learning Control--An Approach with Neuron-Like Associative Memories,")1166 3143 MS
+(IEEE Conference on Neural Information Processing Systems, Denver, CO, pp. 1988.)736 3241 MS
+([91] D. )496 3339 MS
+(Ellison, "On the convergence of the multidimensional )759 3339 MS
+(Albus )2565 3339 MS
+(perceptron," The )2783 3339 MS
+(Intermational Journal of)3368 3339 MS
+(Robotics Research, Vol. 10, pp. 338-357, 1991.)736 3437 MS
+([92] Y.-F. )496 3535 MS
+(Wong, "CMAC learning is governed by a single parameter," IEEE International Conference on Neural)853 3535 MS
+(Networks, San Francisco, Vol. 1, pp. 1439-1443, 1993.)736 3633 MS
+([93] N. E. Cotter and T. J. )496 3731 MS
+(Guillerm, "The CMAC and a theorem of )1391 3731 MS
+(Kolmogorov," Neural Networks, Vol. 5, pp.)2762 3731 MS
+(221-228, 1992.)736 3829 MS
+([94] M. Brown and C. J. Harris, "The )496 3927 MS
+(modelling abilities of the binary CMAC," IEEE international Conference on)1768 3927 MS
+(Neural Networks, Orlando, Florida, Vol. 3, pp. 1335-1339, 1994.)736 4025 MS
+([95] S. )496 4123 MS
+(Yao and Z. Bo, "Learning convergence of CMAC in cyclic learning," International Joint Conference on)745 4123 MS
+(Neural Networks, Nagoya, )736 4221 MS
+(Jpn, Vol. 3, pp. 2583-2586, 1993.)1645 4221 MS
+([96] Y. )496 4319 MS
+(Jin, A. G. Pipe, and A. Winfield, "Stable neural control of discrete systems," IEEE international Symposium)759 4319 MS
+(on Intelligent Control, Chicago, IL, pp. 110-115, 1993.)736 4417 MS
+([97] J. Moody and C. Darken, "Speedy alternatives to back propagation," International Neural Network Society First)496 4515 MS
+(Annual Meeting, Boston, MA, pp. 202, 1988.)736 4613 MS
+([98] N. E. Cotter and O. N. )496 4711 MS
+(Mian, "A pulsed neural network capable of universal approximation," IEEE Transactions)1426 4711 MS
+(on Neural Networks, Vol. 3, pp. 308-314, 1992.)736 4809 MS
+([99] S. Lane, D. )496 4907 MS
+(Handelman, and J. J. )1054 4907 MS
+(Gelfand, "Higher-order CMAC neural networks- theory and practice,")1768 4907 MS
+(American Control Conference, Boston, MA, Vol. 2, pp. 1579-1585, 1991.)736 5005 MS
+([100] E. )496 5103 MS
+(Ersu and H. )792 5103 MS
+(Tolle eds., )1208 5103 MS
+(Learning control structures with neuron-like associative memory systems)1580 5103 MS
+(, VCH)4005 5103 MS
+n
+2424 3 1580 5112 B
+f
+(Verlagsgesellschaft )736 5201 MS
+(mbH, pp. 417-438, 1988.)1405 5201 MS
+([101] W. T. Miller,  B. A. Box,  E. C. Whitney, and J. M. )496 5299 MS
+/IsChar{exch/CharStrings get exch known}bd/MapCh{3 -1 roll/Encoding get 3 1
+roll put}bd/MapDegree{dup 16#b0 exch/degree IsChar{/degree}{/ring}ifelse MapCh}
+bd/MapBB{dup 16#a6 exch/brokenbar IsChar{/brokenbar}{/bar}ifelse MapCh}bd
+/reencode{findfont begin currentdict dup length dict begin{1 index/FID ne{def}
+{pop pop}ifelse}forall/FontName exch def dup length 0 ne{/Encoding Encoding 256
+array copy def 0 exch{dup type/nametype eq{Encoding 2 index 2 index put pop 1
+add}{exch pop}ifelse}forall}if pop currentdict dup end end/FontName get exch
+definefont dup MapDegree MapBB}bd/LATENC[0/grave/acute/circumflex/tilde/macron
+/breve/dotaccent/dieresis/ring/cedilla/hungarumlaut/ogonek/caron/dotlessi/fi/fl
+/Lslash/lslash/Zcaron/zcaron/minus/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/space/exclam/quotedbl
+/numbersign/dollar/percent/ampersand/quotesingle/parenleft/parenright/asterisk
+/plus/comma/hyphen/period/slash/zero/one/two/three/four/five/six/seven/eight
+/nine/colon/semicolon/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M
+/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright/asciicircum
+/underscore/grave/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft
+/bar/braceright/asciitilde/.notdef/.notdef/.notdef/quotesinglbase/florin
+/quotedblbase/ellipsis/dagger/daggerdbl/circumflex/perthousand/Scaron
+/guilsinglleft/OE/.notdef/.notdef/.notdef/.notdef/quoteleft/quoteright
+/quotedblleft/quotedblright/bullet/endash/emdash/tilde/trademark/scaron
+/guilsinglright/oe/.notdef/.notdef/Ydieresis/.notdef/exclamdown/cent/sterling
+/currency/yen/brokenbar/section/dieresis/copyright/ordfeminine/guillemotleft
+/logicalnot/hyphen/registered/macron/degree/plusminus/twosuperior/threesuperior
+/acute/mu/paragraph/periodcentered/cedilla/onesuperior/ordmasculine
+/guillemotright/onequarter/onehalf/threequarters/questiondown/Agrave/Aacute
+/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla/Egrave/Eacute/Ecircumflex
+/Edieresis/Igrave/Iacute/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute
+/Ocircumflex/Otilde/Odieresis/multiply/Oslash/Ugrave/Uacute/Ucircumflex
+/Udieresis/Yacute/Thorn/germandbls/agrave/aacute/acircumflex/atilde/adieresis
+/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave/iacute
+/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex/otilde/odieresis
+/divide/oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn/ydieresis]def
+LATENC /_Times-Roman /Times-Roman reencode
+[83 0 0 -83 0 0]/_Times-Roman MF
+(Glynn, \223Design and implementation of a high speed)2434 5299 MS
+(CMAC neural network using programmable logic cell arrays.\224 )736 5397 MS
+(In Advances in Neural Information Processing)2831 5397 MS
+n
+1544 3 2831 5406 B
+f
+(Systems 3)736 5495 MS
+(, edited by )1072 5495 MS
+(R.P. )1442 5495 MS
+(Lippmann, J.E. Moody, and D.S. )1607 5495 MS
+(Touretzky. Morgan )2727 5495 MS
+(Kaufmann, San Mateo, CA,)3394 5495 MS
+n
+335 3 736 5504 B
+f
+(pp. 1022-1027, 1991.)736 5593 MS
+([102] B. Yang, \223A VLSI Implementation of the CMAC Neural Network.\224 MS Thesis, University of New Hampshire,)496 5691 MS
+(1992.)736 5789 MS
+showpage
+%%Page: 19 19
+12.52 782.039 translate 72 600 div dup neg scale
+0 0 transform .25 add round .25 sub exch .25 add round .25 sub exch itransform translate
+[92 0 0 -92 0 0]/Helvetica MF
+(19)2470 6197 MS
+[83 0 0 -83 0 0]/Times-Roman MF
+([103] A. )496 595 MS
+(Kolez and N. M. )800 595 MS
+/IsChar{exch/CharStrings get exch known}bd/MapCh{3 -1 roll/Encoding get 3 1
+roll put}bd/MapDegree{dup 16#b0 exch/degree IsChar{/degree}{/ring}ifelse MapCh}
+bd/MapBB{dup 16#a6 exch/brokenbar IsChar{/brokenbar}{/bar}ifelse MapCh}bd
+/reencode{findfont begin currentdict dup length dict begin{1 index/FID ne{def}
+{pop pop}ifelse}forall/FontName exch def dup length 0 ne{/Encoding Encoding 256
+array copy def 0 exch{dup type/nametype eq{Encoding 2 index 2 index put pop 1
+add}{exch pop}ifelse}forall}if pop currentdict dup end end/FontName get exch
+definefont dup MapDegree MapBB}bd/LATENC[0/grave/acute/circumflex/tilde/macron
+/breve/dotaccent/dieresis/ring/cedilla/hungarumlaut/ogonek/caron/dotlessi/fi/fl
+/Lslash/lslash/Zcaron/zcaron/minus/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/space/exclam/quotedbl
+/numbersign/dollar/percent/ampersand/quotesingle/parenleft/parenright/asterisk
+/plus/comma/hyphen/period/slash/zero/one/two/three/four/five/six/seven/eight
+/nine/colon/semicolon/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M
+/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright/asciicircum
+/underscore/grave/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft
+/bar/braceright/asciitilde/.notdef/.notdef/.notdef/quotesinglbase/florin
+/quotedblbase/ellipsis/dagger/daggerdbl/circumflex/perthousand/Scaron
+/guilsinglleft/OE/.notdef/.notdef/.notdef/.notdef/quoteleft/quoteright
+/quotedblleft/quotedblright/bullet/endash/emdash/tilde/trademark/scaron
+/guilsinglright/oe/.notdef/.notdef/Ydieresis/.notdef/exclamdown/cent/sterling
+/currency/yen/brokenbar/section/dieresis/copyright/ordfeminine/guillemotleft
+/logicalnot/hyphen/registered/macron/degree/plusminus/twosuperior/threesuperior
+/acute/mu/paragraph/periodcentered/cedilla/onesuperior/ordmasculine
+/guillemotright/onequarter/onehalf/threequarters/questiondown/Agrave/Aacute
+/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla/Egrave/Eacute/Ecircumflex
+/Edieresis/Igrave/Iacute/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute
+/Ocircumflex/Otilde/Odieresis/multiply/Oslash/Ugrave/Uacute/Ucircumflex
+/Udieresis/Yacute/Thorn/germandbls/agrave/aacute/acircumflex/atilde/adieresis
+/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave/iacute
+/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex/otilde/odieresis
+/divide/oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn/ydieresis]def
+LATENC /_Times-Roman /Times-Roman reencode
+[83 0 0 -83 0 0]/_Times-Roman MF
+(Allinson, \223)1379 595 MS
+(Realisation of a modified CMAC architecture using )1741 595 MS
+(reconfigurable logic)3479 595 MS
+(devices.\224 3rd Workshop on Neural Networks: Academic/Industrial/NASA/Defense, Auburn, AL, SPIE Vol.)736 693 MS
+(1721, pp. 195-206, 1993.)736 791 MS
+showpage
+PageSV restore
+%%Trailer
+%%DocumentNeededFonts:
+%%+ Helvetica
+%%+ Helvetica-Bold
+%%+ Helvetica-Oblique
+%%+ Symbol
+%%+ Times-Roman
+%%DocumentSuppliedFonts:
+end
+%%Pages: 19
+%%EOF
