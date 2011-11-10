@@ -1,0 +1,17 @@
+CMACs in Python
+
+Author: Jeremy Stober
+Contact: stober@gmail.com
+Version: 1.0
+
+This is a standalone Python module that implements CMACS. The
+implementation relies on Pythons own internal hashing methods to
+implement the algorithm in a simple "Pythonic" way. Below the CMAC
+class an example that learns the 3d structure of a wave surface is
+included and should serve as an out of the box test that you have the
+necessary prerequisites (numpy and matplotlib) to run this code.
+
+A setup.py script is included that allows for easy installation.
+
+CMACs are useful function approximation methods but suffer from
+problems if the dimensionality of the input data is large.
