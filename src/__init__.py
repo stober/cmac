@@ -11,6 +11,7 @@ from numpy import *
 from numpy.random import *
 import pylab
 #import matplotlib.axes3d as axes3d
+from mpl_toolkits.mplot3d import Axes3D
 import pickle
 
 pylab.ioff()
@@ -148,8 +149,8 @@ def test(name):
 
 
         fig1 = pylab.figure(1)
-        #ax1 = axes3d.Axes3D(fig1)
-        #ax1.scatter3D(points[:,0], points[:,1], responses)
+        ax1 = Axes3D(fig1)
+        ax1.scatter3D(points[:,0], points[:,1], responses)
 
         points = uniform(low=0,high=2*pi,size=(10000,2))
         predictions = []
@@ -157,8 +158,8 @@ def test(name):
             predictions.append(cmac.eval(point))
 
         fig2 = pylab.figure(2)
-        #ax2 = axes3d.Axes3D(fig2)
-        #ax2.scatter3D(points[:,0], points[:,1], predictions)
+        ax2 = Axes3D(fig2)
+        ax2.scatter3D(points[:,0], points[:,1], predictions)
 
         # print len(cmac)
         # pylab.plot(errors)
