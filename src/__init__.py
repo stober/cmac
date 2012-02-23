@@ -16,7 +16,6 @@ import pickle
 
 pylab.ioff()
 
-
 class CMAC(object):
 
     def __init__(self, nlevels, quantization, beta):
@@ -48,26 +47,6 @@ class CMAC(object):
             coords.append(tuple(point))
 
         return coords
-
-    def difference(self, vector, delta, quantized = False):
-        """
-        Train the CMAC using the difference instead of the response.
-        """
-
-        # Coordinates for each level tiling.
-        coords = None
-        if quantized == False:
-            coords = self.quantize(vector)
-        else:
-            coords = vector
-
-        error = self.beta * delta # delta = response - prediction
-
-        for pt in coords:
-            self.weights[pt] += error
-
-        return delta
-
 
     def response(self, vector, response, quantized = False):
         """
@@ -107,6 +86,42 @@ class CMAC(object):
             coords = vector
 
         return sum([self.weights.setdefault(pt, 0.0) for pt in coords]) / len(coords)
+
+
+class TraceCMAC(CMAC):
+
+    """
+    CMAC that can be easily plugged into TD learning.
+    """
+
+    def __init__(self, nlevels, quantization, beta, ld, gamma):
+
+        # initialize parent class attributes
+        CMAC.__init__(self, nlevels, quantization, beta)
+        self.traces = {} # traces
+        self.ld = ld # lambda decay rate for traces
+        self.gamma = gamma # reward decay rate
+
+    def train(self, vector, pvector, reward):
+        delta = reward + (self.gamma * self.eval(vector)) - self.eval(pvector)
+        coords = self.quantize(pvector)
+
+        for (key,val) in self.traces.items():
+            self.traces[key] = self.gamma * self.ld * val
+
+        # increment active traces
+        for pt in coords: # += 1.0?
+            self.traces[pt] = 1.0
+
+        # update params
+        for (key, val) in self.traces.items():
+            self.weights[key] = self.weights[key] + self.beta * delta * val
+
+    def reset(self):
+        self.traces = {}
+
+
+
 
 def test(name):
 
