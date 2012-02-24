@@ -15,3 +15,5 @@ A setup.py script is included that allows for easy installation.
 
 CMACs are useful function approximation methods but suffer from
 problems if the dimensionality of the input data is large.
+
+Requires: numpy, pylab
