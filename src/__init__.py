@@ -91,7 +91,7 @@ class CMAC(object):
 class TraceCMAC(CMAC):
 
     """
-    CMAC that can be easily plugged into TD learning.
+    CMAC that can be easily plugged into TD learning with eligibility traces.
     """
 
     def __init__(self, nlevels, quantization, beta, ld, gamma):
@@ -102,9 +102,8 @@ class TraceCMAC(CMAC):
         self.ld = ld # lambda decay rate for traces
         self.gamma = gamma # reward decay rate
 
-    def train(self, vector, pvector, reward):
-        delta = reward + (self.gamma * self.eval(vector)) - self.eval(pvector)
-        coords = self.quantize(pvector)
+    def train(self, vector, delta):
+        coords = self.quantize(vector)
 
         for (key,val) in self.traces.items():
             self.traces[key] = self.gamma * self.ld * val
@@ -119,9 +118,6 @@ class TraceCMAC(CMAC):
 
     def reset(self):
         self.traces = {}
-
-
-
 
 def test(name):
 
