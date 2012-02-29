@@ -13,7 +13,6 @@ import pylab
 #import matplotlib.axes3d as axes3d
 from mpl_toolkits.mplot3d import Axes3D
 import pickle
-
 pylab.ioff()
 
 class CMAC(object):
@@ -32,7 +31,7 @@ class CMAC(object):
         Generate receptive field coordinates for each level of the CMAC.
         """
 
-        quantized = (vector / self.quantization).astype(int)
+        quantized = (array(vector) / self.quantization).astype(int)
         coords = []
 
         for i in range(self.nlevels):
