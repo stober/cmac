@@ -31,6 +31,14 @@ class CMAC(object):
         Generate receptive field coordinates for each level of the CMAC.
         """
 
+        # some error checking to make sure that the input size doesn't change
+        if hasattr(self, 'input_size') and len(vector) != self.input_size:
+            raise ValueError, "Different input size in call to quantize!"
+        elif not hasattr(self, 'input_size'):
+            self.input_size = len(vector)
+        else:
+            pass
+
         quantized = (array(vector) / self.quantization).astype(int)
         coords = []
 
@@ -110,12 +118,12 @@ class TraceCMAC(CMAC):
 
         # increment active traces
         if self.replace:
-            for pt in coords: 
+            for pt in coords:
                 self.traces[pt] = self.inc
         else:
-            for pt in coords: 
+            for pt in coords:
                 self.traces[pt] = self.inc + self.traces.setdefault(pt,0.0)
-                
+
         # update params
         for (key, val) in self.traces.items():
             self.weights[key] = self.weights.setdefault(key,0.0) + self.beta * delta * val
