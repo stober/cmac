@@ -118,7 +118,7 @@ class TraceCMAC(CMAC):
                 
         # update params
         for (key, val) in self.traces.items():
-            self.weights[key] = self.weights[key] + self.beta * delta * val
+            self.weights[key] = self.weights.setdefault(key,0.0) + self.beta * delta * val
 
     def reset(self):
         self.traces = {}
