@@ -13,6 +13,7 @@ import pylab
 #import matplotlib.axes3d as axes3d
 from mpl_toolkits.mplot3d import Axes3D
 import pickle
+import cmac.fast
 pylab.ioff()
 
 class CMAC(object):
@@ -45,7 +46,9 @@ class CMAC(object):
                     index.append(x + 1 + (i - (x + 1)) % self.nlevels - self.nlevels)
             points.append(index)
         return points
-                            
+
+    def quantize_fast(self, vector):
+        return cmac.fast.quantize(array(vector), self.nlevels, self.quantization)
                     
     def quantize(self, vector):
         """
