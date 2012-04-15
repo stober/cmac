@@ -26,6 +26,27 @@ class CMAC(object):
     def save(self,filename):
         pickle.dump(self,open(filename,'wb'),pickle.HIGHEST_PROTOCAL)
 
+    def quantize_alt(self, vector):
+
+        quantized = []
+        for x in vector:
+            if x >= 0:
+                quantized.append(int(x / self.quantization))
+            else:
+                quantized.append(int((x - self.quantization + 1) / self.quantization))
+
+        points = []
+        for i in range(self.nlevels):
+            index = []
+            for x in quantized:
+                if x >= i:
+                    index.append(x - (x - i) % self.nlevels)
+                else:
+                    index.append(x + 1 + (i - (x + 1)) % self.nlevels - self.nlevels)
+            points.append(index)
+        return points
+                            
+                    
     def quantize(self, vector):
         """
         Generate receptive field coordinates for each level of the CMAC.
@@ -40,6 +61,7 @@ class CMAC(object):
             pass
 
         quantized = (array(vector) / self.quantization).astype(int)
+        #print quantized
         coords = []
 
         for i in range(self.nlevels):
@@ -91,7 +113,7 @@ class CMAC(object):
             coords = self.quantize(vector)
         else:
             coords = vector
-
+        
         return sum([self.weights.setdefault(pt, 0.0) for pt in coords]) / len(coords)
 
 
@@ -101,7 +123,7 @@ class TraceCMAC(CMAC):
     CMAC that can be easily plugged into TD learning with eligibility traces.
     """
 
-    def __init__(self, nlevels, quantization, beta, decay, inc = 1.0, replace = True):
+    def __init__(self, nlevels, quantization, beta, decay, inc = 1.0, replace = True, init = 1.0):
 
         # initialize parent class attributes
         CMAC.__init__(self, nlevels, quantization, beta)
@@ -109,12 +131,19 @@ class TraceCMAC(CMAC):
         self.decay = decay # decay parameter
         self.inc = inc
         self.replace = replace
+        self.init = init
 
     def train(self, vector, delta):
         coords = self.quantize(vector)
 
+        todelete = []
         for (key,val) in self.traces.items():
             self.traces[key] = self.decay * val
+            if self.traces[key] < 0.00000001:
+                todelete.append(key)
+
+        for key in todelete:
+            del self.traces[key]
 
         # increment active traces
         if self.replace:
@@ -126,7 +155,22 @@ class TraceCMAC(CMAC):
 
         # update params
         for (key, val) in self.traces.items():
-            self.weights[key] = self.weights.setdefault(key,0.0) + self.beta * delta * val
+            self.weights[key] = self.weights.setdefault(key,self.init) + self.beta * delta * val
+
+    def eval(self, vector, quantized = False):
+        """
+        Eval the CMAC.
+        """
+
+        # Coordinates for each level tiling.
+        coords = None
+        if quantized == False:
+            coords = self.quantize(vector)
+        else:
+            coords = vector
+        
+        return sum([self.weights.setdefault(pt, self.init) for pt in coords]) / len(coords)
+
 
     def reset(self):
         self.traces = {}
