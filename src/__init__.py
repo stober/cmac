@@ -49,7 +49,7 @@ class CMAC(object):
 
     def quantize_fast(self, vector):
         return cmac.fast.quantize(array(vector), self.nlevels, self.quantization)
-                    
+
     def quantize(self, vector):
         """
         Generate receptive field coordinates for each level of the CMAC.
@@ -76,7 +76,7 @@ class CMAC(object):
             # Label the ith tile so that it gets hashed uniquely.
             point.append(i)
 
-            coords.append(tuple(point))
+            coords.append(tuple(point)) # may not be needed
 
         return coords
 
@@ -116,7 +116,7 @@ class CMAC(object):
             coords = self.quantize(vector)
         else:
             coords = vector
-        
+
         return sum([self.weights.setdefault(pt, 0.0) for pt in coords]) / len(coords)
 
 
@@ -171,9 +171,11 @@ class TraceCMAC(CMAC):
             coords = self.quantize(vector)
         else:
             coords = vector
-        
+
         return sum([self.weights.setdefault(pt, self.init) for pt in coords]) / len(coords)
 
+    def __len__(self):
+        return len(self.weights) + len(self.traces)
 
     def reset(self):
         self.traces = {}
