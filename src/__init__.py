@@ -126,6 +126,8 @@ class TraceCMAC(CMAC):
     CMAC that can be easily plugged into TD learning with eligibility traces.
     """
 
+    init = 1.0
+
     def __init__(self, nlevels, quantization, beta, decay, inc = 1.0, replace = True, init = 1.0):
 
         # initialize parent class attributes
